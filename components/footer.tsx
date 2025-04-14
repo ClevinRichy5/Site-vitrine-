@@ -35,7 +35,7 @@ export default function Footer() {
               {["Accueil", "A propos", "Produits", "Localisation", "Contact"].map((item) => (
                 <li key={item}>
                   <Link
-                    href={`#${item.toLowerCase()}`}
+                    href={`/#${item.toLowerCase()}`}
                     className="text-gray-400 hover:text-green-400 transition-colors"
                   >
                     {item}

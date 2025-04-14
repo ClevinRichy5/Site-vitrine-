@@ -34,9 +34,9 @@ export default function Navbar() {
           <nav className="hidden md:flex items-center space-x-8">
             {[
               { name: "Accueil", href: "/" },
-              { name: "À Propos", href: "/a-propos" },
               { name: "Produits", href: "/#products" },
               { name: "Localisation", href: "/#location" },
+              { name: "À Propos", href: "/a-propos" },
               { name: "Contact", href: "/#contact" },
             ].map((item) => (
               <Link

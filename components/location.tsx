@@ -40,7 +40,7 @@ export default function Location() {
           </h2>
           <div className="w-20 h-1 bg-green-600 mt-4 mx-auto"></div>
           <p className="mt-6 text-gray-600 text-lg">
-          Visitez nos installations pour en savoir plus sur nos pratiques agricoles durables et savourez des produits laitiers frais directement à la source.
+            Visitez nos installations pour en savoir plus sur nos pratiques agricoles durables et savourez des produits laitiers frais directement à la source.
           </p>
         </motion.div>
 
@@ -83,36 +83,15 @@ export default function Location() {
               <div className="absolute inset-0 bg-green-100">
                 <div className="w-full h-full relative">
                   {/* Simulated map with styling */}
-                  <div className="absolute inset-0 bg-[#e8f4ea] overflow-hidden">
-                    {/* Map grid lines */}
-                    <div
-                      className="absolute inset-0"
-                      style={{
-                        backgroundImage:
-                          "linear-gradient(to right, #d1e7d6 1px, transparent 1px), linear-gradient(to bottom, #d1e7d6 1px, transparent 1px)",
-                        backgroundSize: "20px 20px",
-                      }}
-                    ></div>
+                  <iframe
+                    width="100%"
+                    height="400"
+                    frameBorder="0"
+                    style={{ border: 0 }}
+                    src="https://www.google.com/maps/embed/v1/place?key=TA_CLE_API&q=Eiffel+Tower,Paris+France"
+                    allowFullScreen
+                  ></iframe>
 
-                    {/* Roads */}
-                    <div className="absolute top-1/2 left-0 right-0 h-6 bg-white transform -translate-y-1/2"></div>
-                    <div className="absolute top-0 bottom-0 left-1/3 w-6 bg-white transform -translate-x-1/2"></div>
-
-                    {/* Location markers */}
-                    <div className="absolute top-1/3 left-1/4 w-8 h-8 bg-green-600 rounded-full transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center text-white font-bold">
-                      1
-                    </div>
-                    <div className="absolute top-2/3 left-2/3 w-8 h-8 bg-green-600 rounded-full transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center text-white font-bold">
-                      2
-                    </div>
-
-                    {/* Water */}
-                    <div className="absolute bottom-10 right-10 w-40 h-40 bg-blue-100 rounded-full"></div>
-
-                    {/* Green areas */}
-                    <div className="absolute top-20 left-20 w-60 h-30 bg-green-200 rounded-lg"></div>
-                    <div className="absolute bottom-40 left-40 w-40 h-60 bg-green-200 rounded-lg"></div>
-                  </div>
 
                   {/* Controls overlay */}
                   <div className="absolute top-4 right-4 bg-white rounded-lg shadow-md p-2 flex flex-col space-y-2">

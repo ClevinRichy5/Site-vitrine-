@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react"
 import Image from "next/image"
 import { motion } from "framer-motion"
+import Link from "next/link"
 
 export default function Hero() {
   const milkRef = useRef<HTMLDivElement>(null)
@@ -62,12 +63,12 @@ export default function Hero() {
               ferme à votre table.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button className="bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 transition-all transform hover:scale-105 font-medium">
+              <a href="#products" className="bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 transition-all transform hover:scale-105 font-medium">
                 Explorer nos Produits
-              </button>
-              <button className="border-2 border-green-600 text-green-600 px-8 py-3 rounded-full hover:bg-green-50 transition-all transform hover:scale-105 font-medium">
+              </a>
+              <Link href={'/a-propos'} className="border-2 border-green-600 text-green-600 px-8 py-3 rounded-full hover:bg-green-50 transition-all transform hover:scale-105 font-medium">
                 En Savoir Plus
-              </button>
+              </Link>
             </div>
           </motion.div>
 
