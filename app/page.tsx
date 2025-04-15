@@ -7,6 +7,7 @@ import Contact from "@/components/contact"
 import Newsletter from "@/components/newsletter"
 import Footer from "@/components/footer"
 import Chatbot from "@/components/chatbot"
+import ContactInfo from "@/components/ContactInfo"
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
       <Hero />
       <About />
       <Products />
-      <Location />
+      <ContactInfo />
       <Contact />
       <Newsletter />
       <Footer />

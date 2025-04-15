@@ -1,104 +1,172 @@
-"use client"
 
-import { useRef } from "react"
-import { useInView } from "framer-motion"
-import Image from "next/image"
-import { motion } from "framer-motion"
-import { CheckCircle } from "lucide-react"
-import Link from "next/link"
-
-export default function About() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.3 })
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  }
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6 },
-    },
-  }
-
-  const benefits = [
-    "100% Naturel & Bio",
-    "Sans Conservateurs",
-    "Riche en Nutriments",
-    "Agriculture Durable",
-    "Emballage Éco-responsable",
-    "De la Ferme à la Table",
-  ]
-
+import React, { useEffect, useState } from 'react';
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Phone, Mail } from 'lucide-react';
+import { equipe, camlaitOffice, ceo, family, companyHistory } from "../components/src/images"
+import Link from 'next/link';
+const About = () => {
+  const [visibleSection, setVisibleSection] = useState(0);
+  const [animateElements, setAnimateElements] = useState(false);
+  
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        setAnimateElements(true);
+      }
+    }, { threshold: 0.2 });
+    
+    const aboutSection = document.getElementById("about");
+    if (aboutSection) {
+      observer.observe(aboutSection);
+    }
+    
+    return () => {
+      if (aboutSection) {
+        observer.unobserve(aboutSection);
+      }
+    };
+  }, []);
+  
   return (
-    <section id="about" className="py-20 bg-gradient-to-b from-white to-green-50" ref={ref}>
-      <div className="container mx-auto px-4">
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-          className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
-        >
-          <motion.div variants={itemVariants} className="relative">
-            <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-xl">
-              <Image src="/camlait.jpg?height=1000&width=800" alt="Notre ferme" fill className="object-cover" />
-            </div>
-            <div className="absolute -bottom-6 -right-6 bg-white/80 backdrop-blur-md p-4 rounded-xl shadow-lg w-[200px] border border-white/50">
-              <div className="text-green-600 font-bold text-4xl">25+</div>
-              <div className="text-gray-600">Années d'Excellence</div>
-            </div>
-          </motion.div>
-
-          <div className="space-y-8">
-            <motion.div variants={itemVariants}>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 leading-tight">
-                Notre Histoire de Lait <span className="text-green-600">Pur</span> &{" "}
-                <span className="text-green-600">Naturel</span>
-              </h2>
-              <div className="w-20 h-1 bg-green-600 mt-4"></div>
-            </motion.div>
-
-            <motion.p variants={itemVariants} className="text-gray-600 text-lg">
-              Fondée en 1998, CamLait s'est engagée à fournir des produits laitiers de la plus haute qualité tout en
-              maintenant des pratiques agricoles durables et éthiques. Nos vaches paissent dans des pâturages verdoyants
-              et sont traitées avec le plus grand soin et respect.
-            </motion.p>
-
-            <motion.p variants={itemVariants} className="text-gray-600 text-lg">
-              Nous croyons que le meilleur lait provient de vaches heureuses, c'est pourquoi nous accordons la priorité
-              au bien-être animal et aux pratiques d'alimentation naturelles. Notre dévouement à la qualité a fait de
-              nous un nom de confiance dans les foyers à travers le pays.
-            </motion.p>
-
-            <motion.div variants={itemVariants} className="grid grid-cols-2 gap-4 mt-8">
-              {benefits.map((benefit, index) => (
-                <div key={index} className="flex items-center space-x-2">
-                  <CheckCircle className="text-green-600 h-5 w-5" />
-                  <span className="text-gray-700">{benefit}</span>
-                </div>
-              ))}
-            </motion.div>
-
-            <motion.div variants={itemVariants}>
-              <Link
-                href="/a-propos"
-                className="mt-8 inline-block bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 transition-all transform hover:scale-105 font-medium"
-              >
-                En Savoir Plus Sur Nous
+    <section id="about" className="py-24 bg-[#f6fbf3]">
+      <div className="container mx-auto px-4 md:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+            À Propos de Nous
+          </h2>
+          <div className="w-24 h-1 bg-green-600 mx-auto mb-6"></div>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            CAMLAIT, une entreprise engagée dans la qualité et l'excellence depuis 1972
+          </p>
+        </div>
+        
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+          <div className="order-2 lg:order-1">
+            <h3 className={`text-2xl font-bold mb-6 text-green-700 transition-all duration-700 ${animateElements ? 'opacity-100' : 'opacity-0'}`}>
+              Notre Histoire
+            </h3>
+            <p className={`mb-6 text-gray-700 transition-all duration-700 delay-100 ${animateElements ? 'opacity-100' : 'opacity-0'}`}>
+            CAMLAIT, entreprise agroalimentaire camerounaise, 
+            est le leader incontesté dans la production et la 
+            distribution de produits laitiers. Fondée en 1971, elle s'est rapidement imposée comme un acteur majeur du secteur agroalimentaire au Cameroun, alliant expertise
+            et savoir-faire pour offrir des produits de haute qualité.
+            </p>
+            <div className={`flex flex-col sm:flex-row gap-4 transition-all duration-700 delay-300 ${animateElements ? 'opacity-100' : 'opacity-0'}`}>
+              <Button className="bg-green-600 hover:bg-green-700">
+                Notre Vision
+              </Button>
+              <Link href="#ContactForm">
+                <Button variant="outline" className="text-black border-green-600 hover:bg-green-50">
+                  Contactez-nous <ArrowRight size={16} className="ml-2" />
+                </Button>
               </Link>
-            </motion.div>
+            </div>
           </div>
-        </motion.div>
+          <div className="order-1 lg:order-2 relative">
+            <div className={`relative z-10 rounded-xl overflow-hidden shadow-xl transition-all duration-1000 transform ${animateElements ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}`}>
+              <img 
+                src={companyHistory} 
+                alt="Histoire de CAMLAIT" 
+                className="w-full h-auto object-cover rounded-xl"
+                style={{ maxHeight: '500px' }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-green-900/60 to-transparent"></div>
+              <div className="absolute bottom-0 left-0 p-6 text-white">
+                <span className="text-sm font-semibold bg-green-600 px-3 py-1 rounded-full">Fondée en 1972</span>
+                <h4 className="text-xl font-bold mt-2">Un héritage d'excellence</h4>
+              </div>
+            </div>
+            <div className="absolute top-10 -right-5 w-40 h-40 bg-green-300/20 rounded-full blur-3xl animate-pulse z-0"></div>
+          </div>
+        </div>
+        
+        {/* Section sur le PDG */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+          <div className="relative">
+            <div className={`relative z-10 rounded-xl overflow-hidden shadow-xl transition-all duration-1000 transform ${animateElements ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}`} style={{ transitionDelay: '200ms' }}>
+              <img 
+                src={ceo} 
+                alt="Certification ISO" 
+                className="w-full h-auto object-cover rounded-xl" 
+                style={{ maxHeight: '500px' }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-green-900/60 to-transparent"></div>
+              <div className="absolute bottom-0 left-0 p-6 text-white">
+                <span className="text-sm font-semibold bg-green-600 px-3 py-1 rounded-full">Certification Iso</span>
+                <h4 className="text-xl font-bold mt-2">Certification 12/2371</h4>
+                <p className="text-white/80">SGS</p>
+              </div>
+            </div>
+            <div className="absolute -bottom-10 -left-5 w-40 h-40 bg-green-300/20 rounded-full blur-3xl animate-pulse z-0"></div>
+          </div>
+          <div>
+            <h3 className={`text-2xl font-bold mb-6 text-green-700 transition-all duration-700 ${animateElements ? 'opacity-100' : 'opacity-0'}`} style={{ transitionDelay: '300ms' }}>
+              Notre Direction
+            </h3>
+            <p className={`mb-6 text-gray-700 transition-all duration-700 ${animateElements ? 'opacity-100' : 'opacity-0'}`} style={{ transitionDelay: '400ms' }}>
+            Sous une direction dynamique, CAMLAIT a connu une transformation significative au cours de la dernière décennie. Fort de plus de 25 ans d'expérience dans l'industrie alimentaire, notre leader apporte une expertise inestimable 
+            et une passion pour l'innovation à notre entreprise.
+            </p>
+            <p className={`mb-6 text-gray-700 transition-all duration-700 ${animateElements ? 'opacity-100' : 'opacity-0'}`} style={{ transitionDelay: '500ms' }}>
+            Notre PDG a mis en œuvre une stratégie audacieuse pour moderniser nos installations, élargir notre gamme de produits et renforcer notre engagement envers
+             la durabilité et la responsabilité sociale.
+            </p>
+            <div className={`flex flex-col sm:flex-row gap-4 transition-all duration-700 ${animateElements ? 'opacity-100' : 'opacity-0'}`} style={{ transitionDelay: '600ms' }}>
+              <Button className="bg-green-600 hover:bg-green-700">
+                <Phone size={16} className="mr-2" /> Contacter la Direction
+              </Button>
+              <Button variant="outline" className="text-black border-green-600 hover:bg-green-50">
+                <Mail size={16} className="mr-2" /> Email
+              </Button>
+            </div>
+          </div>
+        </div>
+        
+        {/* Section sur la famille */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="order-2 lg:order-1">
+            <h3 className={`text-2xl font-bold mb-6 text-green-700 transition-all duration-700 ${animateElements ? 'opacity-100' : 'opacity-0'}`} style={{ transitionDelay: '700ms' }}>
+              Notre Vision
+            </h3>
+            <p className={`mb-6 text-gray-700 transition-all duration-700 ${animateElements ? 'opacity-100' : 'opacity-0'}`} style={{ transitionDelay: '800ms' }}>
+            Demain, CAMLAIT veut être une entreprise entièrement africaine de référence
+            mondiale, dans le domaine de la valorisation des matières premières issues de
+            l'agriculture locale et de l'élevage.
+            </p>
+            <p className={`mb-6 text-gray-700 transition-all duration-700 ${animateElements ? 'opacity-100' : 'opacity-0'}`} style={{ transitionDelay: '900ms' }}>
+            Aujourd'hui, CAMLAIT est une entreprise camerounaise à vocation africaine,
+            spécialisée dans la transformation et la distribution des produits alimentaires de très
+            grande qualité.
+            </p>
+            <div className={`flex flex-col sm:flex-row gap-4 transition-all duration-700 ${animateElements ? 'opacity-100' : 'opacity-0'}`} style={{ transitionDelay: '1000ms' }}>
+              <Button className="bg-green-600 hover:bg-green-700">
+                Nos Valeurs
+              </Button>
+              <Button variant="outline" className="text-black border-green-600 hover:bg-green-50">
+                Responsabilité Sociale <ArrowRight size={16} className="ml-2" />
+              </Button>
+            </div>
+          </div>
+          <div className="order-1 lg:order-2 relative">
+            <div className={`relative z-10 rounded-xl overflow-hidden shadow-xl transition-all duration-1000 transform ${animateElements ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}`} style={{ transitionDelay: '1100ms' }}>
+              <img 
+                src={family} 
+                alt="Famille CAMLAIT" 
+                className="w-full h-auto object-cover rounded-xl" 
+                style={{ maxHeight: '500px' }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-green-900/60 to-transparent"></div>
+              <div className="absolute bottom-0 left-0 p-6 text-white">
+                <span className="text-sm font-semibold bg-green-600 px-3 py-1 rounded-full">Tradition</span>
+                <h4 className="text-xl font-bold mt-2">Trois générations d'excellence</h4>
+              </div>
+            </div>
+            <div className="absolute top-10 -right-5 w-40 h-40 bg-green-300/20 rounded-full blur-3xl animate-pulse z-0"></div>
+          </div>
+        </div>
       </div>
     </section>
-  )
-}
+  );
+};
+
+export default About;
