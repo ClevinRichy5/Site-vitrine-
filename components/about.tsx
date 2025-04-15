@@ -7,7 +7,6 @@ import Link from 'next/link';
 const About = () => {
   const [visibleSection, setVisibleSection] = useState(0);
   const [animateElements, setAnimateElements] = useState(false);
-  
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       if (entries[0].isIntersecting) {
