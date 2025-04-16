@@ -5,7 +5,7 @@ import { useParams } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { ArrowLeft, Star, ShoppingCart, Heart, Share2 } from "lucide-react"
+import { ArrowLeft, Star, Info } from "lucide-react"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import Chatbot from "@/components/chatbot"
@@ -308,36 +308,9 @@ export default function ProductDetail() {
                 </div>
 
                 <div className="flex items-center space-x-4">
-                  <div className="flex items-center border border-gray-300 rounded-full overflow-hidden">
-                    <button
-                      className="px-3 py-1 bg-gray-100 hover:bg-gray-200 transition-colors"
-                      onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                    >
-                      -
-                    </button>
-                    <span className="px-4 py-1">{quantity}</span>
-                    <button
-                      className="px-3 py-1 bg-gray-100 hover:bg-gray-200 transition-colors"
-                      onClick={() => setQuantity(quantity + 1)}
-                    >
-                      +
-                    </button>
-                  </div>
-
                   <button className="flex-1 bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition-all transform hover:scale-105 font-medium flex items-center justify-center">
-                    <ShoppingCart className="mr-2 h-5 w-5" />
-                    Ajouter au panier
-                  </button>
-                </div>
-
-                <div className="flex space-x-4">
-                  <button className="flex items-center text-gray-600 hover:text-red-500 transition-colors">
-                    <Heart className="mr-1 h-5 w-5" />
-                    Favoris
-                  </button>
-                  <button className="flex items-center text-gray-600 hover:text-blue-500 transition-colors">
-                    <Share2 className="mr-1 h-5 w-5" />
-                    Partager
+                    <Info className="mr-2 h-5 w-5" />
+                    Plus d'info
                   </button>
                 </div>
               </motion.div>

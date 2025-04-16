@@ -1,20 +1,20 @@
+"use client"
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { useToast } from '@/hooks/use-toast';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import { toast } from 'sonner';
 
-const ContactForm = () => {
-  const { toast } = useToast();
+export default function ContactForm(){
+  // const { toast } = useToast();
   
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
     // In a real application, you would submit the form data to your backend
-    toast({
-      title: "Message sent!",
+    toast("Message sent!",{
       description: "We'll get back to you as soon as possible.",
     });
     
@@ -24,12 +24,12 @@ const ContactForm = () => {
   };
   
   return (
-    <section id="contact" className="section bg-white dark:bg-slate-900 relative">
+    <section id="contact" className="py-20 bg-green-50">
       <div className="container mx-auto">
         <div className="text-center mb-16 opacity-0 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">CONTACT</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">CONTACT</h2>
           <div className="w-24 h-1 bg-green-600 mx-auto mb-6"></div>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
            vous avez des questions? des preocupations? veillez nous ecrires
           </p>
         </div>
@@ -38,7 +38,7 @@ const ContactForm = () => {
           {/* Contact Info */}
           <div className="lg:col-span-2 opacity-0 animate-fade-in animate-delay-100">
             <div className="glass p-8 rounded-xl h-full border border-green-200 dark:border-green-900/30">
-              <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">Contact Information</h3>
+              <h3 className="text-2xl font-semibold mb-6 text-gray-900">Contact Information</h3>
               
               <div className="space-y-6">
                 <div className="flex items-start">
@@ -141,5 +141,3 @@ const ContactForm = () => {
     </section>
   );
 };
-
-export default ContactForm;

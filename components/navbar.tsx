@@ -1,3 +1,5 @@
+"use client"
+
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
@@ -33,7 +35,7 @@ export default function Navbar() {
             {[
               { name: "Accueil", href: "/" },
               { name: "Produits", href: "/#products" },
-              { name: "Localisation", href: "/#location" },
+              { name: "Localisation", href: "/#ContactInfo" },
               { name: "À Propos", href: "/a-propos" },
               { name: "Contact", href: "/#contact" },
             ].map((item) => (
