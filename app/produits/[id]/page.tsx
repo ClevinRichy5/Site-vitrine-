@@ -5,7 +5,7 @@ import { useParams } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { ArrowLeft, Star, ShoppingCart, Heart, Share2 } from "lucide-react"
+import { ArrowLeft, Star, Info } from "lucide-react"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import Chatbot from "@/components/chatbot"
@@ -14,116 +14,174 @@ import Chatbot from "@/components/chatbot"
 const productsData = [
   {
     id: "1",
-    name: "Lait Entier",
+    name: "BreakSoy",
     description:
-      "Notre lait entier classique, riche en saveur et en nutriments. Parfait pour toute la famille. Provenant de vaches élevées en pâturage libre, ce lait est non seulement délicieux mais aussi éthique et durable.",
+      "Notre BreakSoy, riche en saveur et en nutriments. Parfait pour toute la famille. Provenant de vaches élevées en pâturage libre, ce lait est non seulement délicieux mais aussi éthique et durable.",
     longDescription:
-      "Le lait entier LaitPur est le fruit d'un savoir-faire transmis de génération en génération. Nos vaches paissent librement dans les prairies verdoyantes, se nourrissant d'herbe fraîche et de foin naturel. Ce mode d'élevage traditionnel et respectueux garantit un lait d'une qualité exceptionnelle, riche en vitamines A et D, en calcium et en protéines essentielles.\n\nChaque gorgée vous offre une expérience crémeuse et satisfaisante, idéale pour accompagner vos céréales du matin, enrichir vos recettes ou simplement être dégustée pure pour apprécier sa saveur authentique. Notre processus de pasteurisation préserve les qualités nutritionnelles tout en garantissant une sécurité alimentaire optimale.",
-    price: "2550 F CFA",
-    volume: "1 litre",
+      "BreakSoy est le fruit d'un savoir-faire transmis de génération en génération. Nos vaches paissent librement dans les prairies verdoyantes, se nourrissant d'herbe fraîche et de foin naturel. Ce mode d'élevage traditionnel et respectueux garantit un lait d'une qualité exceptionnelle, riche en vitamines A et D, en calcium et en protéines essentielles.\n\nChaque gorgée vous offre une expérience crémeuse et satisfaisante, idéale pour accompagner vos céréales du matin, enrichir vos recettes ou simplement être dégustée pure pour apprécier sa saveur authentique. Notre processus de pasteurisation préserve les qualités nutritionnelles tout en garantissant une sécurité alimentaire optimale.",
+    price: "150 F CFA",
+    volume: "500ml",
     nutritionalInfo: {
       calories: "65 kcal par 100ml",
       fat: "3,6g par 100ml",
       protein: "3,2g par 100ml",
       calcium: "120mg par 100ml",
     },
-    image: "/produit1.jpg?height=500&width=500",
+    image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Lait_BreakSoy_Chocolat_1000%20x%201506.jpg?height=500&width=500",
     gallery: [
-      "/produit2.jpg?height=600&width=600",
-      "/produit3.jpg?height=600&width=600",
-      "/produit1.jpg?height=600&width=600",
+      "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Lait_BreakSoy_Chocolat_1000%20x%201506.jpg?height=600&width=600",
+      "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Lait_BreakSoy_Chocolat_1000%20x%201506.jpg?height=600&width=600",
+      "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Lait_BreakSoy_Chocolat_1000%20x%201506.jpg?height=600&width=600",
     ],
     variants: [
-      { id: "1-1", name: "Bouteille 1L", price: "2550 F CFA", image: "/produit3.jpg?height=300&width=300" },
-      { id: "1-2", name: "Pack 6x1L", price: "1450 F CFA", image: "/produit2.jpg?height=300&width=300" },
-      { id: "1-3", name: "Bouteille 2L", price: "4775 F CFA", image: "/produit1.jpg?height=300&width=300" },
+      { id: "1-1", name: "BreakSoy 500mL", price: "150 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Lait_BreakSoy_Chocolat_1000%20x%201506.jpg?height=300&width=300" },
+      { id: "1-2", name: "BreakSoy 550mL", price: "150 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Lait_BreakSoy_Chocolat_1000%20x%201506.jpg?height=300&width=300" },
+      { id: "1-3", name: "BreakSoy 500mL", price: "150 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Lait_BreakSoy_Chocolat_1000%20x%201506.jpg?height=300&width=300" },
     ],
     rating: 4.8,
     reviews: 124,
   },
   {
     id: "2",
-    name: "Lait Demi-Écrémé",
+    name: "Riverr",
     description:
       "Toute la bonté avec moins de matières grasses. Idéal pour ceux qui surveillent leur apport calorique tout en profitant des bienfaits nutritionnels du lait.",
     longDescription:
-      "Notre lait demi-écrémé offre un équilibre parfait entre goût crémeux et légèreté. Avec seulement 1,5% de matières grasses, il constitue une option plus légère que le lait entier, tout en conservant sa richesse en calcium, protéines et vitamines essentielles.\n\nProduit dans le respect de nos valeurs d'agriculture durable, ce lait provient de vaches nourries principalement à l'herbe et élevées dans des conditions optimales de bien-être animal. Chaque étape de production est soigneusement contrôlée pour vous garantir un produit de la plus haute qualité.\n\nPolyvalent, il s'intègre parfaitement dans votre quotidien : dans votre café, vos smoothies, vos préparations culinaires ou simplement dans un verre pour une pause rafraîchissante et nutritive.",
-    price: "2330 F CFA",
-    volume: "1 litre",
+      "Notre lait Riverr offre un équilibre parfait entre goût crémeux et légèreté. Avec seulement 1,5% de matières grasses, il constitue une option plus légère que le lait entier, tout en conservant sa richesse en calcium, protéines et vitamines essentielles.\n\nProduit dans le respect de nos valeurs d'agriculture durable, ce lait provient de vaches nourries principalement à l'herbe et élevées dans des conditions optimales de bien-être animal. Chaque étape de production est soigneusement contrôlée pour vous garantir un produit de la plus haute qualité.\n\nPolyvalent, il s'intègre parfaitement dans votre quotidien : dans votre café, vos smoothies, vos préparations culinaires ou simplement dans un verre pour une pause rafraîchissante et nutritive.",
+    price: "100 F CFA",
+    volume: "1L",
     nutritionalInfo: {
       calories: "46 kcal par 100ml",
       fat: "1,5g par 100ml",
       protein: "3,3g par 100ml",
       calcium: "122mg par 100ml",
     },
-    image: "/produit1.jpg?height=500&width=500",
+    image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Boissons_Riverr%20500ml_Fruits%20tropicaux_1000%20x%201506.jpg?height=500&width=500",
     gallery: [
-      "/produit1.jpg?height=600&width=600",
-      "/produit1.jpg?height=600&width=600",
-      "/produit1.jpg?height=600&width=600",
+      "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Boissons_Riverr%20500ml_Fruits%20tropicaux_1000%20x%201506.jpg?height=600&width=600",
+      "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Boissons_Riverr%20500ml_Fruits%20tropicaux_1000%20x%201506.jpg?height=600&width=600",
+      "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Boissons_Riverr%20500ml_Fruits%20tropicaux_1000%20x%201506.jpg?height=600&width=600",
     ],
     variants: [
-      { id: "2-1", name: "Bouteille 1L", price: "2,30 F CFA", image: "/produit1.jpg?height=300&width=300" },
-      { id: "2-2", name: "Pack 6x1L", price: "13,50 F CFA", image: "/produit1.jpg?height=300&width=300" },
-      { id: "2-3", name: "Bouteille 2L", price: "4,40 F CFA", image: "/produit1.jpg?height=300&width=300" },
+      { id: "2-1", name: "Riverr 500mL", price: "100 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Boissons_Riverr%20500ml_Fruits%20tropicaux_1000%20x%201506.jpg?height=300&width=300" },
+      { id: "2-2", name: "Riverr 500mL", price: "100 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Boissons_Riverr%20500ml_Fruits%20tropicaux_1000%20x%201506.jpg?height=300&width=300" },
+      { id: "2-3", name: "River 500ml", price: "100 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Boissons_Riverr%20500ml_Fruits%20tropicaux_1000%20x%201506.jpg?height=300&width=300" },
     ],
     rating: 4.7,
     reviews: 98,
   },
   {
     id: "3",
-    name: "Yaourt Bio",
+    name: "Nouriss",
     description:
-      "Yaourt crémeux et délicieux fabriqué à partir de notre lait bio premium. Une option saine pour une collation.",
+      "Riche en probiotiques, calcium et protéines fabriqué à partir de notre lait bio premium. Une option saine pour une collation.",
     longDescription:
-      "Notre yaourt bio est élaboré selon des méthodes traditionnelles, en utilisant uniquement notre lait biologique de la plus haute qualité et des ferments lactiques soigneusement sélectionnés. Le processus de fermentation lent permet de développer une texture onctueuse et un goût authentique qui ravira vos papilles.\n\nRiche en probiotiques naturels, notre yaourt contribue à une flore intestinale équilibrée et à une bonne digestion. Sa teneur élevée en protéines et en calcium en fait un allié précieux pour votre santé osseuse et musculaire.\n\nSans conservateurs ni additifs artificiels, ce yaourt incarne notre engagement envers des produits purs et naturels. Dégustez-le nature pour apprécier sa saveur subtile, ou accompagné de fruits frais, de miel ou de granola pour un petit-déjeuner ou un en-cas équilibré et délicieux.",
-    price: "3220 F CFA",
-    volume: "500g",
+      "Nouriss est notre yaourt à la vanille premium, élaboré avec soin pour offrir une texture crémeuse et un goût authentique. Enrichi en probiotiques, ce yaourt contribue à une bonne santé digestive tout en vous offrant un moment de plaisir gourmand\n\nce Nouriss contribue à une bonne santé digestive tout en vous offrant un moment de plaisir gourmand.",
+    price: "250 F CFA",
+    volume: "250ml",
     nutritionalInfo: {
       calories: "58 kcal par 100g",
       fat: "3,2g par 100g",
       protein: "4,3g par 100g",
       calcium: "150mg par 100g",
     },
-    image: "/produit1.jpg?height=500&width=500",
+    image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Nouriss%20250ml_Vanille_1506%20x%201000.jpg?height=500&width=500",
     gallery: [
-      "/produit1.jpg?height=600&width=600",
-      "/produit1.jpg?height=600&width=600",
-      "/produit1.jpg?height=600&width=600",
+      "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Nouriss%20250ml_Vanille_1506%20x%201000.jpg?height=600&width=600",
+      "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Nouriss%20250ml_Vanille_1506%20x%201000.jpg?height=600&width=600",
+      "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Nouriss%20250ml_Vanille_1506%20x%201000.jpg?height=600&width=600",
     ],
     variants: [
-      { id: "3-1", name: "Pot 500g Nature", price: "3,20 F CFA", image: "/produit1.jpg?height=300&width=300" },
-      { id: "3-2", name: "Pack 4x125g Fruits", price: "4,50 F CFA", image: "/produit1.jpg?height=300&width=300" },
-      { id: "3-3", name: "Pot 1kg Nature", price: "5,90 F CFA", image: "/produit1.jpg?height=300&width=300" },
+      { id: "3-1", name: "Nouriss 250ml ", price: "250 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Nouriss%20250ml_Vanille_1506%20x%201000.jpg?height=300&width=300" },
+      { id: "3-2", name: "Nouriss 250ml ", price: "250 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Nouriss%20250ml_Vanille_1506%20x%201000.jpg?height=300&width=300" },
+      { id: "3-3", name: "Nouriss 250ml ", price: "250 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Nouriss%20250ml_Vanille_1506%20x%201000.jpg?height=300&width=300" },
     ],
     rating: 4.9,
     reviews: 156,
   },
   {
     id: "4",
-    name: "Fromage Frais",
+    name: "yem valoute",
     description:
-      "Fromage artisanal élaboré selon des méthodes traditionnelles pour une saveur authentique et raffinée.",
+      "Notre Yaourt yem valoute est un classique intemporel, élaboré selon des méthodes traditionnelles pour préserver toute l'authenticité du lait.",
     longDescription:
-      "Notre fromage frais est le fruit d'un savoir-faire artisanal transmis à travers les générations. Fabriqué à partir de lait frais collecté quotidiennement dans nos fermes partenaires, il est transformé dans les 24 heures suivant la traite pour préserver toute sa fraîcheur et ses qualités nutritionnelles.\n\nLe caillage lent et naturel, suivi d'un égouttage progressif, confère à notre fromage frais sa texture unique, à la fois légère et onctueuse. Son goût délicat, légèrement acidulé, révèle toute la richesse aromatique du lait de nos terroirs.\n\nPolyvalent en cuisine, il se déguste aussi bien nature qu'assaisonné d'herbes fraîches ou de poivre. Il sublime vos salades, se marie parfaitement avec des fruits frais ou secs, et constitue la base idéale pour vos cheesecakes et autres desserts créatifs. Une source précieuse de protéines et de calcium, alliant plaisir gustatif et bienfaits nutritionnels.",
-    price: "4550 F CFA",
-    volume: "250g",
+      " Sans sucre ajouté, il vous offre une expérience gustative pure et peut être consommé nature ou agrémenté selon vos envies.\n\n roirs.\n\n être consommé nature ou agrémenté selon vos envies.",
+    price: "400 F CFA",
+    volume: "200g",
     nutritionalInfo: {
       calories: "80 kcal par 100g",
       fat: "4,5g par 100g",
       protein: "7,5g par 100g",
       calcium: "95mg par 100g",
     },
-    image: "/produit1.jpg?height=500&width=500",
+    image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Jem%20200g_Nature_1000%20x%201506.jpg?height=500&width=500",
     gallery: [
-      "/produit1.jpg?height=600&width=600",
-      "/produit1.jpg?height=600&width=600",
-      "/produit1.jpg?height=600&width=600",
+      "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Jem%20200g_Nature_1000%20x%201506.jpg?height=600&width=600",
+      "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Jem%20200g_Nature_1000%20x%201506.jpg?height=600&width=600",
+      "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Jem%20200g_Nature_1000%20x%201506.jpg?height=600&width=600",
     ],
     variants: [
-      { id: "4-1", name: "Portion 250g Nature", price: "4,50 F CFA", image: "/produit1.jpg?height=300&width=300" },
-      { id: "4-2", name: "Portion 250g Herbes", price: "4,95 F CFA", image: "/produit1.jpg?height=300&width=300" },
-      { id: "4-3", name: "Portion 500g Nature", price: "8,50 F CFA", image: "/produit1.jpg?height=300&width=300" },
+      { id: "4-1", name: "yem valoute", price: "400 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Jem%20200g_Nature_1000%20x%201506.jpg?height=300&width=300" },
+      { id: "4-2", name: "yem valoute", price: "400 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Jem%20200g_Nature_1000%20x%201506.jpg?height=300&width=300" },
+      { id: "4-3", name: "yem valoute", price: "400 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Jem%20200g_Nature_1000%20x%201506.jpg?height=300&width=300" },
+    ],
+    rating: 4.6,
+    reviews: 87,
+  },
+  {
+    id: "5",
+    name: "Buerre gusta",
+    description:
+      "Margarine premium pour cuisine et pâtisserie.",
+    longDescription:
+      " Gusta est notre margarine premium, idéale pour toutes vos préparations culinaires. Sa texture onctueuse et son goût délicat en font un allié précieux en cuisine comme en pâtisserie.\n\n être consommé nature ou agrémenté selon vos envies.",
+    price: "500 F CFA",
+    volume: "500g",
+    nutritionalInfo: {
+      calories: "80 kcal par 100g",
+      fat: "4,5g par 100g",
+      protein: "7,5g par 100g",
+      calcium: "95mg par 100g",
+    },
+    image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Margarine_Gusta_900%20x%20600_2.jpg?height=500&width=500",
+    gallery: [
+      "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Margarine_Gusta_900%20x%20600_2.jpg?height=600&width=600",
+      "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Margarine_Gusta_900%20x%20600_2.jpg?height=600&width=600",
+      "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Margarine_Gusta_900%20x%20600_2.jpg?height=600&width=600",
+    ],
+    variants: [
+      { id: "5-1", name: "Buerre gusta", price: "500 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Margarine_Gusta_900%20x%20600_2.jpg?height=300&width=300" },
+      { id: "5-2", name: "Buerre gusta", price: "500 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Margarine_Gusta_900%20x%20600_2.jpg?height=300&width=300" },
+      { id: "5-3", name: "Buerre gusta", price: "500 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Margarine_Gusta_900%20x%20600_2.jpg?height=300&width=300" },
+    ],
+    rating: 4.6,
+    reviews: 87,
+  },
+  {
+    id: "6",
+    name: "yem valoute",
+    description:
+      "Notre Yaourt yem valoute est un classique intemporel, élaboré selon des méthodes traditionnelles pour préserver toute l'authenticité du lait.",
+    longDescription:
+      " Sans sucre ajouté, il vous offre une expérience gustative pure et peut être consommé nature ou agrémenté selon vos envies.\n\n roirs.\n\n être consommé nature ou agrémenté selon vos envies.",
+    price: "400 F CFA",
+    volume: "200g",
+    nutritionalInfo: {
+      calories: "80 kcal par 100g",
+      fat: "4,5g par 100g",
+      protein: "7,5g par 100g",
+      calcium: "95mg par 100g",
+    },
+    image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Jem%20200g_Nature_1000%20x%201506.jpg?height=500&width=500",
+    gallery: [
+      "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Jem%20200g_Nature_1000%20x%201506.jpg?height=600&width=600",
+      "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Jem%20200g_Nature_1000%20x%201506.jpg?height=600&width=600",
+      "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Jem%20200g_Nature_1000%20x%201506.jpg?height=600&width=600",
+    ],
+    variants: [
+      { id: "4-1", name: "yem valoute Nature", price: "400 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Jem%20200g_Nature_1000%20x%201506.jpg?height=300&width=300" },
+      { id: "4-2", name: "yem valoute Fraise", price: "400 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Jem%20200g_Nature_1000%20x%201506.jpg?height=300&width=300" },
+      { id: "4-3", name: "yem valoute Tarte au citron", price: "400 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Jem%20200g_Nature_1000%20x%201506.jpg?height=300&width=300" },
     ],
     rating: 4.6,
     reviews: 87,
@@ -308,36 +366,9 @@ export default function ProductDetail() {
                 </div>
 
                 <div className="flex items-center space-x-4">
-                  <div className="flex items-center border border-gray-300 rounded-full overflow-hidden">
-                    <button
-                      className="px-3 py-1 bg-gray-100 hover:bg-gray-200 transition-colors"
-                      onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                    >
-                      -
-                    </button>
-                    <span className="px-4 py-1">{quantity}</span>
-                    <button
-                      className="px-3 py-1 bg-gray-100 hover:bg-gray-200 transition-colors"
-                      onClick={() => setQuantity(quantity + 1)}
-                    >
-                      +
-                    </button>
-                  </div>
-
                   <button className="flex-1 bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition-all transform hover:scale-105 font-medium flex items-center justify-center">
-                    <ShoppingCart className="mr-2 h-5 w-5" />
-                    Ajouter au panier
-                  </button>
-                </div>
-
-                <div className="flex space-x-4">
-                  <button className="flex items-center text-gray-600 hover:text-red-500 transition-colors">
-                    <Heart className="mr-1 h-5 w-5" />
-                    Favoris
-                  </button>
-                  <button className="flex items-center text-gray-600 hover:text-blue-500 transition-colors">
-                    <Share2 className="mr-1 h-5 w-5" />
-                    Partager
+                    <Info className="mr-2 h-5 w-5" />
+                    Plus d'info
                   </button>
                 </div>
               </motion.div>

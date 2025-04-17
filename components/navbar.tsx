@@ -1,3 +1,5 @@
+"use client"
+
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
@@ -25,7 +27,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center">
-            <span className="text-2xl font-bold text-green-600">CamLait</span>
+            <span className="text-2xl font-bold text-green-600">CAMLAIT</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -33,8 +35,8 @@ export default function Navbar() {
             {[
               { name: "Accueil", href: "/" },
               { name: "Produits", href: "/#products" },
-              { name: "Localisation", href: "/#location" },
-              { name: "À Propos", href: "/a-propos" },
+              { name: "Localisation", href: "/#ContactInfo" },
+              { name: "À Propos", href: "/components/about.tsx" },
               { name: "Contact", href: "/#contact" },
             ].map((item) => (
               <Link
@@ -65,7 +67,7 @@ export default function Navbar() {
             <nav className="flex flex-col space-y-4">
               {[
                 { name: "Accueil", href: "/" },
-                { name: "À Propos", href: "/a-propos" },
+                { name: "À Propos", href: "about" },
                 { name: "Produits", href: "/#products" },
                 { name: "Localisation", href: "/#location" },
                 { name: "Contact", href: "/#contact" },

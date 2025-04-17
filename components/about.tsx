@@ -1,8 +1,13 @@
+// <<<<<<< HEAD
+// =======
+"use client"
+// >>>>>>> 1d9bc5d11437a8646a457dcb308db9b2dd5d24cf
 import React, { useEffect, useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone, Mail } from 'lucide-react';
 import { equipe, camlaitOffice, ceo, family, companyHistory } from "../components/src/images"
 import Link from 'next/link';
+import Image from 'next/image';
 const About = () => {
   const [visibleSection, setVisibleSection] = useState(0);
   const [animateElements, setAnimateElements] = useState(false);
@@ -62,11 +67,13 @@ const About = () => {
           </div>
           <div className="order-1 lg:order-2 relative">
             <div className={`relative z-10 rounded-xl overflow-hidden shadow-xl transition-all duration-1000 transform ${animateElements ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}`}>
-              <img 
+              <Image 
                 src={companyHistory} 
                 alt="Histoire de CAMLAIT" 
                 className="w-full h-auto object-cover rounded-xl"
                 style={{ maxHeight: '500px' }}
+                width={500}
+                height={500}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-green-900/60 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-6 text-white">
@@ -82,11 +89,13 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
           <div className="relative">
             <div className={`relative z-10 rounded-xl overflow-hidden shadow-xl transition-all duration-1000 transform ${animateElements ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}`} style={{ transitionDelay: '200ms' }}>
-              <img 
+              <Image 
                 src={ceo} 
                 alt="Certification ISO" 
                 className="w-full h-auto object-cover rounded-xl" 
                 style={{ maxHeight: '500px' }}
+                width={500}
+                height={500}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-green-900/60 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-6 text-white">

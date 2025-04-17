@@ -1,3 +1,5 @@
+"use client"
+
 import { useState, useRef } from "react"
 import { useInView } from "framer-motion"
 import Image from "next/image"
@@ -13,30 +15,44 @@ export default function Products() {
   const products = [
     {
       id: "1",
-      name: "Lait Entier",
-      description: "Notre lait entier classique, riche en saveur et en nutriments. Parfait pour toute la famille.",
-      image: "/produit1.jpg?height=500&width=500",
+      name: "BreakSoy",
+      description: "BreakSay est notre boisson lactée chocolatée phare, spécialement conçue pour les enfants et appréciée également par les adultes. Ce produit combine le meilleur du lait avec un délicieux goût de chocolat, offrant une expérience gustative exceptionnelle tout en apportant des nutriments essentiels..",
+      image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Lait_BreakSoy_Chocolat_1000%20x%201506.jpg?height=500&width=500",
     },
     {
       id: "2",
-      name: "Lait Demi-Écrémé",
+      name: "Riverr",
       description:
-        "Toute la bonté avec moins de matières grasses. Idéal pour ceux qui surveillent leur apport calorique.",
-      image: "/produit2.jpg?height=500&width=500",
+        "Riverr est notre boisson rafraîchissante aux fruits tropicaux, conçue pour stimuler la croissance intellectuelle. Faible en sucre et riche en vitamines, cette boisson est parfaite pour les moments de concentration ou simplement pour se désaltérer avec une touche exotique.",
+      image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Boissons_Riverr%20500ml_Fruits%20tropicaux_1000%20x%201506.jpg?height=500&width=500",
     },
     {
       id: "3",
-      name: "Yaourt Bio",
+      name: "Nouriss",
       description:
-        "Yaourt crémeux et délicieux fabriqué à partir de notre lait bio premium. Une option saine pour une collation.",
-      image: "/produit3.jpg?height=500&width=500",
+        "Nouriss est notre yaourt à la vanille premium, élaboré avec soin pour offrir une texture crémeuse et un goût authentique. Enrichi en probiotiques, ce yaourt contribue à une bonne santé digestive tout en vous offrant un moment de plaisir gourmand",
+      image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Nouriss%20250ml_Vanille_1506%20x%201000.jpg?height=500&width=500",
     },
     {
       id: "4",
-      name: "Fromage Frais",
+      name: "yem valoute",
       description:
-        "Fromage artisanal élaboré selon des méthodes traditionnelles pour une saveur authentique et raffinée.",
-      image: "/produit1.jpg?height=500&width=500",
+        "Notre Yaourt yem valoute est un classique intemporel, élaboré selon des méthodes traditionnelles pour préserver toute l'authenticité du lait. Sans sucre ajouté, il vous offre une expérience gustative pure et peut être consommé nature ou agrémenté selon vos envies.",
+      image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Jem%20200g_Nature_1000%20x%201506.jpg?height=500&width=500",
+    },
+    {
+      id: "5",
+      name: "Buerre gusta",
+      description:
+        "Gusta est notre margarine premium, idéale pour toutes vos préparations culinaires. Sa texture onctueuse et son goût délicat en font un allié précieux en cuisine comme en pâtisserie. Enrichie en acides gras essentiels, elle contribue à une alimentation équilibrée.",
+      image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Margarine_Gusta_900%20x%20600_2.jpg?height=500&width=500",
+    },
+    {
+      id: "6",
+      name: "la berger instant",
+      description:
+        "Notre berger instant est un lait entier pasteurisé de la plus haute qualité. Soigneusement sélectionné et traité avec respect, il conserve toute sa richesse nutritionnelle et son goût authentique. Un produit essentiel au quotidien pour toute la famille.",
+      image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Lait_La%20BI_1000%20x%201506.jpg?height=500&width=500",
     },
   ]
 

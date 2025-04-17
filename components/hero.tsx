@@ -1,3 +1,5 @@
+"use client"
+
 import { useEffect, useRef } from "react"
 import Image from "next/image"
 import { motion } from "framer-motion"
@@ -52,19 +54,15 @@ export default function Hero() {
             className="text-center lg:text-left"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 leading-tight">
-              Pur, Frais & <span className="text-green-600">Naturel</span>
+              CAMLAIT, LA
               <br />
-              Pour Votre Famille
+              FORCE DU LAIT
             </h1>
-            <p className="mt-6 text-lg text-gray-600 max-w-lg mx-auto lg:mx-0">
-              Découvrez la richesse de la nature avec nos produits laitiers de qualité premium, élaborés avec soin de la
-              ferme à votre table.
-            </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a href="#products" className="bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 transition-all transform hover:scale-105 font-medium">
                 Explorer nos Produits
               </a>
-              <Link href={'/a-propos'} className="border-2 border-green-600 text-green-600 px-8 py-3 rounded-full hover:bg-green-50 transition-all transform hover:scale-105 font-medium">
+              <Link href={'/components/about'} className="border-2 border-green-600 text-green-600 px-8 py-3 rounded-full hover:bg-green-50 transition-all transform hover:scale-105 font-medium">
                 En Savoir Plus
               </Link>
             </div>
