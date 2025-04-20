@@ -1,8 +1,8 @@
 import type React from "react"
 import "./globals.css"
-import { Inter } from "next/font/google"
+import { Open_Sans } from "next/font/google"
 
-const inter = Inter({ subsets: ["latin"] })
+const open_sans = Open_Sans({ subsets: ["latin"] })
 
 export const metadata = {
   title: "Camlait - SARL",
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={open_sans.className}>
         {children}
       </body>
     </html>

@@ -14,8 +14,8 @@ export default function ContactForm(){
     e.preventDefault();
     
     // In a real application, you would submit the form data to your backend
-    toast("Message sent!",{
-      description: "We'll get back to you as soon as possible.",
+    toast("Message envoyé!",{
+      description: "Nous vous répondons dès que possible.",
     });
     
     // Reset the form
@@ -26,7 +26,7 @@ export default function ContactForm(){
   return (
     <section id="contact" className="py-20 bg-green-50">
       <div className="container mx-auto">
-        <div className="text-center mb-16 opacity-0 animate-fade-in">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">CONTACT</h2>
           <div className="w-24 h-1 bg-green-600 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -36,7 +36,7 @@ export default function ContactForm(){
         
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
           {/* Contact Info */}
-          <div className="lg:col-span-2 opacity-0 animate-fade-in animate-delay-100">
+          <div className="lg:col-span-2  animate-fade-in animate-delay-100">
             <div className="glass p-8 rounded-xl h-full border border-green-200 dark:border-green-900/30">
               <h3 className="text-2xl font-semibold mb-6 text-gray-900">Contact Information</h3>
               
@@ -77,7 +77,7 @@ export default function ContactForm(){
           </div>
           
           {/* Contact Form */}
-          <div className="lg:col-span-3 opacity-0 animate-fade-in animate-delay-200">
+          <div className="lg:col-span-3  animate-fade-in animate-delay-200">
             <div className="glass p-8 rounded-xl border border-green-200 dark:border-green-900/30">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

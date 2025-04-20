@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { Facebook, Twitter, Instagram, Linkedin, Github, MapPin, Phone, Mail } from 'lucide-react';
-import { FacebookIcon } from 'lucide-react';
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white pt-16 pb-8">

@@ -10,6 +10,14 @@ import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import Chatbot from "@/components/chatbot"
 
+import { Pacifico } from "next/font/google"
+
+const pacifico = Pacifico({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-pacifico",
+})
+
 // Données simulées des produits
 const productsData = [
   {
@@ -327,7 +335,7 @@ export default function ProductDetail() {
                       {product.rating} ({product.reviews} avis)
                     </span>
                   </div>
-                  <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mt-2">{product.name}</h1>
+                  <h1 className={`${pacifico.className} text-3xl md:text-4xl font-bold text-gray-800 mt-2`}>{product.name}</h1>
                   <p className="text-xl text-green-600 font-semibold mt-2">{selectedVariant?.price || product.price}</p>
                 </div>
 

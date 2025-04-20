@@ -36,7 +36,7 @@ export default function Navbar() {
               { name: "Accueil", href: "/" },
               { name: "Produits", href: "/#products" },
               { name: "Localisation", href: "/#ContactInfo" },
-              { name: "À Propos", href: "/components/about.tsx" },
+              { name: "À Propos", href: "/#about" },
               { name: "Contact", href: "/#contact" },
             ].map((item) => (
               <Link

@@ -6,6 +6,13 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
+import { Pacifico } from "next/font/google"
+
+const pacifico = Pacifico({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-pacifico",
+})
 
 export default function Products() {
   const ref = useRef(null)
@@ -104,31 +111,52 @@ export default function Products() {
             <motion.div
               key={product.id}
               variants={itemVariants}
-              className={`bg-white/40 backdrop-blur-lg rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl transform hover:-translate-y-2 border border-white/50 ${
-                activeProduct === index ? "ring-2 ring-green-500" : ""
-              }`}
+              whileHover={{ scale: 1.03 }}
+              className={`group relative bg-gradient-to-br from-white/50 to-green-50/30 backdrop-blur-lg rounded-3xl overflow-hidden shadow-xl border border-white/30 transition-all duration-300 transform hover:-translate-y-2 ${activeProduct === index ? "ring-2 ring-green-500" : ""
+                }`}
               onClick={() => setActiveProduct(index)}
             >
-              <div className="relative h-64 bg-green-50/50">
-                <Image
-                  src={product.image || "/produit1.jpg"}
-                  alt={product.name}
-                  fill
-                  className="object-contain p-4"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-2">{product.name}</h3>
-                <p className="text-gray-600 mb-4">{product.description}</p>
-                <Link
-                  href={`/produits/${product.id}`}
-                  className="inline-flex items-center text-green-600 font-medium hover:text-green-700 transition-colors"
+              {/* Image Container avec overlay titre */}
+              <div className="relative h-64 w-full overflow-hidden">
+                <motion.div
+                  whileHover={{ scale: 1.15, rotate: -4 }}
+                  transition={{ type: "spring", stiffness: 100 }}
+                  className="w-full h-full"
                 >
-                  Voir Détails <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
+                  <Image
+                    src={product.image || "/produit1.jpg"}
+                    alt={product.name}
+                    fill
+                    className="object-contain p-6 transition-transform duration-500"
+                  />
+                </motion.div>
+
+                {/* Overlay du nom */}
+                <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-white/80 via-white/30 to-transparent p-4">
+                  <h3 className={`${pacifico.className}  text-lg font-bold text-gray-800 text-center truncate`}>
+                    {product.name}
+                  </h3>
+                </div>
+              </div>
+
+              {/* Détails produit */}
+              <div className="p-5 bg-white/50 backdrop-blur-md">
+                <p className="text-gray-600 text-sm mb-4 line-clamp-3">
+                  {product.description}
+                </p>
+                <div className="flex justify-center">
+                  <Link
+                    href={`/produits/${product.id}`}
+                    className="px-5 py-2 bg-green-600 text-white rounded-full shadow-lg hover:bg-green-700 transition-all duration-300 hover:shadow-xl flex items-center gap-2"
+                  >
+                    <span>Voir Détails</span>
+                    <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                  </Link>
+                </div>
               </div>
             </motion.div>
           ))}
+
         </motion.div>
 
         <motion.div
