@@ -42,9 +42,9 @@ export default function Products() {
     },
     {
       id: "4",
-      name: "yem valoute",
+      name: "jem velouté",
       description:
-        "Notre Yaourt yem valoute est un classique intemporel, élaboré selon des méthodes traditionnelles pour préserver toute l'authenticité du lait. Sans sucre ajouté, il vous offre une expérience gustative pure et peut être consommé nature ou agrémenté selon vos envies.",
+        "Notre Yaourt jem velouté est un classique intemporel, élaboré selon des méthodes traditionnelles pour préserver toute l'authenticité du lait. Sans sucre ajouté, il vous offre une expérience gustative pure et peut être consommé nature ou agrémenté selon vos envies.",
       image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Jem%20200g_Nature_1000%20x%201506.jpg?height=500&width=500",
     },
     {
@@ -56,11 +56,26 @@ export default function Products() {
     },
     {
       id: "6",
-      name: "la berger instant",
+      name: "la bergere instant",
       description:
-        "Notre berger instant est un lait entier pasteurisé de la plus haute qualité. Soigneusement sélectionné et traité avec respect, il conserve toute sa richesse nutritionnelle et son goût authentique. Un produit essentiel au quotidien pour toute la famille.",
+        "Notre bergere instant est un lait entier pasteurisé de la plus haute qualité. Soigneusement sélectionné et traité avec respect, il conserve toute sa richesse nutritionnelle et son goût authentique. Un produit essentiel au quotidien pour toute la famille.",
       image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Lait_La%20BI_1000%20x%201506.jpg?height=500&width=500",
     },
+    {
+     id: "7",
+      name: "Fruidou",
+      description:
+        "Fruidou est une boisson lactée légère et fruitée, fabriquée par Camlait. Elle associe la douceur du lait à la fraîcheur des fruits pour offrir une boisson savoureuse et désaltérante. Idéale pour les pauses gourmandes, les petits-déjeuners ou les goûters des petits comme des grands.",
+      image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//pomme.jpg",
+    },   
+    {
+      id: "8",
+       name: "Jovino",
+       description:
+         "Jovino est une boisson lactée onctueuse et nourrissante, fabriquée par Camlait. Elle combine la richesse du lait à une texture douce et savoureuse, pour offrir un moment de plaisir et d’énergie à tout moment de la journée.Jovino séduit par sa qualité et son goût réconfortant..",
+       image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Jovino1.jpg",
+     }, 
+
   ]
 
   const containerVariants = {

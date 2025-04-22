@@ -42,9 +42,9 @@ const productsData = [
       "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Lait_BreakSoy_Chocolat_1000%20x%201506.jpg?height=600&width=600",
     ],
     variants: [
-      { id: "1-1", name: "BreakSoy 500mL", price: "150 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Lait_BreakSoy_Chocolat_1000%20x%201506.jpg?height=300&width=300" },
-      { id: "1-2", name: "BreakSoy 550mL", price: "150 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Lait_BreakSoy_Chocolat_1000%20x%201506.jpg?height=300&width=300" },
-      { id: "1-3", name: "BreakSoy 500mL", price: "150 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Lait_BreakSoy_Chocolat_1000%20x%201506.jpg?height=300&width=300" },
+      { id: "1-1", name: "BreakSoy Vanille", price: "300 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//caramel.jpg" },
+      { id: "1-2", name: "BreakSoy Cafe", price: "300 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//cafe.jpg" },
+      { id: "1-3", name: "BreakSoy Camarel", price: "300 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//vanille.jpg"},
     ],
     rating: 4.8,
     reviews: 124,
@@ -71,9 +71,9 @@ const productsData = [
       "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Boissons_Riverr%20500ml_Fruits%20tropicaux_1000%20x%201506.jpg?height=600&width=600",
     ],
     variants: [
-      { id: "2-1", name: "Riverr 500mL", price: "100 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Boissons_Riverr%20500ml_Fruits%20tropicaux_1000%20x%201506.jpg?height=300&width=300" },
-      { id: "2-2", name: "Riverr 500mL", price: "100 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Boissons_Riverr%20500ml_Fruits%20tropicaux_1000%20x%201506.jpg?height=300&width=300" },
-      { id: "2-3", name: "River 500ml", price: "100 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Boissons_Riverr%20500ml_Fruits%20tropicaux_1000%20x%201506.jpg?height=300&width=300" },
+      { id: "2-1", name: "Riverr Soja", price: "300 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//soya.jpg"},
+      { id: "2-2", name: "Riverr Pomme", price: "300 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//pomme%20(2).jpg" },
+      { id: "2-3", name: "River Orange", price: "300 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//rorange.jpg" },
     ],
     rating: 4.7,
     reviews: 98,
@@ -109,9 +109,9 @@ const productsData = [
   },
   {
     id: "4",
-    name: "yem valoute",
+    name: "jem velouté",
     description:
-      "Notre Yaourt yem valoute est un classique intemporel, élaboré selon des méthodes traditionnelles pour préserver toute l'authenticité du lait.",
+      "Notre Yaourt jem velouté est un classique intemporel, élaboré selon des méthodes traditionnelles pour préserver toute l'authenticité du lait.",
     longDescription:
       " Sans sucre ajouté, il vous offre une expérience gustative pure et peut être consommé nature ou agrémenté selon vos envies.\n\n roirs.\n\n être consommé nature ou agrémenté selon vos envies.",
     price: "400 F CFA",
@@ -129,16 +129,16 @@ const productsData = [
       "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Jem%20200g_Nature_1000%20x%201506.jpg?height=600&width=600",
     ],
     variants: [
-      { id: "4-1", name: "yem valoute", price: "400 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Jem%20200g_Nature_1000%20x%201506.jpg?height=300&width=300" },
-      { id: "4-2", name: "yem valoute", price: "400 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Jem%20200g_Nature_1000%20x%201506.jpg?height=300&width=300" },
-      { id: "4-3", name: "yem valoute", price: "400 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Jem%20200g_Nature_1000%20x%201506.jpg?height=300&width=300" },
+      { id: "4-1", name: "jem velouté", price: "400 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Jem%20200g_Nature_1000%20x%201506.jpg?height=300&width=300" },
+      { id: "4-2", name: "jem velouté", price: "400 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Jem%20200g_Nature_1000%20x%201506.jpg?height=300&width=300" },
+      { id: "4-3", name: "jem velouté", price: "400 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Jem%20200g_Nature_1000%20x%201506.jpg?height=300&width=300" },
     ],
     rating: 4.6,
     reviews: 87,
   },
   {
     id: "5",
-    name: "Buerre gusta",
+    name: "beurre gusta",
     description:
       "Margarine premium pour cuisine et pâtisserie.",
     longDescription:
@@ -167,9 +167,9 @@ const productsData = [
   },
   {
     id: "6",
-    name: "yem valoute",
+    name: "jem velouté",
     description:
-      "Notre Yaourt yem valoute est un classique intemporel, élaboré selon des méthodes traditionnelles pour préserver toute l'authenticité du lait.",
+      "Notre Yaourt jem velouté est un classique intemporel, élaboré selon des méthodes traditionnelles pour préserver toute l'authenticité du lait.",
     longDescription:
       " Sans sucre ajouté, il vous offre une expérience gustative pure et peut être consommé nature ou agrémenté selon vos envies.\n\n roirs.\n\n être consommé nature ou agrémenté selon vos envies.",
     price: "400 F CFA",
@@ -187,13 +187,66 @@ const productsData = [
       "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Jem%20200g_Nature_1000%20x%201506.jpg?height=600&width=600",
     ],
     variants: [
-      { id: "4-1", name: "yem valoute Nature", price: "400 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Jem%20200g_Nature_1000%20x%201506.jpg?height=300&width=300" },
-      { id: "4-2", name: "yem valoute Fraise", price: "400 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Jem%20200g_Nature_1000%20x%201506.jpg?height=300&width=300" },
-      { id: "4-3", name: "yem valoute Tarte au citron", price: "400 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Jem%20200g_Nature_1000%20x%201506.jpg?height=300&width=300" },
+      { id: "4-1", name: "jem velouté Nature", price: "400 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Jem%20200g_Nature_1000%20x%201506.jpg?height=300&width=300" },
+      { id: "4-2", name: "jem velouté Fraise", price: "400 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Jem%20200g_Nature_1000%20x%201506.jpg?height=300&width=300" },
+      { id: "4-3", name: "jem velouté Tarte au citron", price: "400 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Yaourts_Jem%20200g_Nature_1000%20x%201506.jpg?height=300&width=300" },
     ],
     rating: 4.6,
     reviews: 87,
   },
+  {
+    id: "7",
+    name: "Fruidou",
+    description:
+     "Boisson lactée fruitée rafraîchissante.",
+    longDescription:
+    "Fruidou est une boisson lactée légère et fruitée, fabriquée par Camlait. Elle associe la douceur du lait à la fraîcheur des fruits pour offrir une boisson savoureuse et désaltérante. Idéale pour les pauses gourmandes, les petits-déjeuners ou les goûters des petits comme des grands.",
+    price: "300 F CFA",
+    volume: "1L",
+    nutritionalInfo: {
+      calories: "65 kcal par 100ml",
+      fat: "2,5g par 100ml",
+      protein: "3,2g par 100ml",
+      calcium: "120mg par 100ml",
+    },
+    image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//pomme.jpg",
+    gallery: [
+      "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//FruidouGoyave.jpg",
+      "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//orange.jpg",
+      "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Mange.jpg",
+    ],
+    variants: [
+      { id: "6-1", name: "Fruidou Goyave", price: "1000 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//FruidouGoyave.jpg" },
+      { id: "6-2", name: "Fruidou Orange", price: "1000 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//orange.jpg" },
+      { id: "6-3", name: "Fruidou Mangue", price: "1000 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Mange.jpg"},
+    ],
+    rating: 4.7,
+    reviews: 152,
+  } ,
+  {
+    id: "8",
+    name: "Jovino",
+    description: "Boisson lactée nourrissante et onctueuse.",
+    longDescription: "Jovino est une boisson lactée onctueuse et nourrissante, fabriquée par Camlait. Elle combine la richesse du lait à une texture douce et savoureuse, pour offrir un moment de plaisir et d’énergie à tout moment de la journée.",
+    price: "100 F CFA",
+    volume: "1L",
+    nutritionalInfo: {
+    calories: "70 kcal par 100ml",
+    fat: "3g par 100ml",
+    protein: "3,5g par 100ml",
+    calcium: "130mg par 100ml"
+    },
+    image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Jovino1.jpg",
+    "gallery": [
+      "12",
+    ],
+    variants: [
+      { "id": "8-1", name: "Jovino Cocktail", price: "100 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Jovino1.jpg"}
+    ],
+    rating: 4.6,
+    reviews: 137
+  }
+  
 ]
 
 export default function ProductDetail() {
