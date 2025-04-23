@@ -25,7 +25,7 @@ export default function Products() {
       name: "BreakSoy",
       description: "BreakSay est notre boisson lactée chocolatée phare...",
       image:
-        "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images/Home_Nos%20marques_Lait_BreakSoy_Chocolat_1000%20x%201506.jpg?height=500&width=500",
+        "/produits/chocolatt.jpg",
     },
     {
       id: "2",
@@ -33,7 +33,7 @@ export default function Products() {
       description:
         "Riverr est notre boisson rafraîchissante aux fruits tropicaux...",
       image:
-        "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images/Home_Nos%20marques_Boissons_Riverr%20500ml_Fruits%20tropicaux_1000%20x%201506.jpg?height=500&width=500",
+        "/produits/pomme (2).jpg",
     },
     {
       id: "3",
@@ -41,7 +41,7 @@ export default function Products() {
       description:
         "Nouriss est notre yaourt à la vanille premium, élaboré avec soin...",
       image:
-        "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images/Home_Nos%20marques_Yaourts_Nouriss%20250ml_Vanille_1506%20x%201000.jpg?height=500&width=500",
+        "/produits/Home_Nos marques_Yaourts_Nouriss 250ml_Vanille_1506 x 1000.jpg",
     },
     {
       id: "4",
@@ -49,7 +49,7 @@ export default function Products() {
       description:
         "Notre Yaourt jem velouté est un classique intemporel...",
       image:
-        "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images/Home_Nos%20marques_Yaourts_Jem%20200g_Nature_1000%20x%201506.jpg?height=500&width=500",
+        "/produits/Home_Nos marques_Yaourts_Jem 200g_Nature_1000 x 1506",
     },
     {
       id: "5",
@@ -57,7 +57,7 @@ export default function Products() {
       description:
         "Gusta est notre margarine premium, idéale pour toutes vos préparations...",
       image:
-        "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images/Home_Nos%20marques_Margarine_Gusta_900%20x%20600_2.jpg?height=500&width=500",
+        "/produits/Home_Nos marques_Margarine_Gusta_900 x 600_3.jpg",
     },
     {
       id: "6",
@@ -65,7 +65,7 @@ export default function Products() {
       description:
         "Notre bergere instant est un lait entier pasteurisé de la plus haute qualité...",
       image:
-        "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images/Home_Nos%20marques_Lait_La%20BI_1000%20x%201506.jpg?height=500&width=500",
+        "/produits/Home_Nos marques_Lait_La BI_1000 x 1506.jpg",
     },
     {
       id: "7",
@@ -73,7 +73,7 @@ export default function Products() {
       description:
         "Fruidou est une boisson lactée légère et fruitée, fabriquée par Camlait...",
       image:
-        "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images/pomme.jpg",
+        "/produits/orange.jpg",
     },
     {
       id: "8",
@@ -81,7 +81,7 @@ export default function Products() {
       description:
         "Jovino est une boisson lactée onctueuse et nourrissante...",
       image:
-        "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images/Jovino1.jpg",
+        "/produits/Jovino1.jpg",
     },
   ]
 
