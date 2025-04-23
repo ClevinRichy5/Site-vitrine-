@@ -143,7 +143,7 @@ export default function Products() {
                     alt={product.name}
                     width={100}
                     height={100}
-                    className="object-contain p-6 transition-transform duration-500"
+                    className="object-contain w-full h-full p-6 transition-transform duration-500"
                   />
                 </motion.div>
 

@@ -44,7 +44,7 @@ const productsData = [
     variants: [
       { id: "1-1", name: "BreakSoy Vanille", price: "300 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//caramel.jpg" },
       { id: "1-2", name: "BreakSoy Cafe", price: "300 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//cafe.jpg" },
-      { id: "1-3", name: "BreakSoy Camarel", price: "300 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//vanille.jpg"},
+      { id: "1-3", name: "BreakSoy Camarel", price: "300 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//vanille.jpg" },
     ],
     rating: 4.8,
     reviews: 124,
@@ -71,7 +71,7 @@ const productsData = [
       "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Home_Nos%20marques_Boissons_Riverr%20500ml_Fruits%20tropicaux_1000%20x%201506.jpg?height=600&width=600",
     ],
     variants: [
-      { id: "2-1", name: "Riverr Soja", price: "300 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//soya.jpg"},
+      { id: "2-1", name: "Riverr Soja", price: "300 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//soya.jpg" },
       { id: "2-2", name: "Riverr Pomme", price: "300 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//pomme%20(2).jpg" },
       { id: "2-3", name: "River Orange", price: "300 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//rorange.jpg" },
     ],
@@ -198,9 +198,9 @@ const productsData = [
     id: "7",
     name: "Fruidou",
     description:
-     "Boisson lactée fruitée rafraîchissante.",
+      "Boisson lactée fruitée rafraîchissante.",
     longDescription:
-    "Fruidou est une boisson lactée légère et fruitée, fabriquée par Camlait. Elle associe la douceur du lait à la fraîcheur des fruits pour offrir une boisson savoureuse et désaltérante. Idéale pour les pauses gourmandes, les petits-déjeuners ou les goûters des petits comme des grands.",
+      "Fruidou est une boisson lactée légère et fruitée, fabriquée par Camlait. Elle associe la douceur du lait à la fraîcheur des fruits pour offrir une boisson savoureuse et désaltérante. Idéale pour les pauses gourmandes, les petits-déjeuners ou les goûters des petits comme des grands.",
     price: "300 F CFA",
     volume: "1L",
     nutritionalInfo: {
@@ -218,11 +218,11 @@ const productsData = [
     variants: [
       { id: "6-1", name: "Fruidou Goyave", price: "1000 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//FruidouGoyave.jpg" },
       { id: "6-2", name: "Fruidou Orange", price: "1000 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//orange.jpg" },
-      { id: "6-3", name: "Fruidou Mangue", price: "1000 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Mange.jpg"},
+      { id: "6-3", name: "Fruidou Mangue", price: "1000 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Mange.jpg" },
     ],
     rating: 4.7,
     reviews: 152,
-  } ,
+  },
   {
     id: "8",
     name: "Jovino",
@@ -231,22 +231,22 @@ const productsData = [
     price: "100 F CFA",
     volume: "1L",
     nutritionalInfo: {
-    calories: "70 kcal par 100ml",
-    fat: "3g par 100ml",
-    protein: "3,5g par 100ml",
-    calcium: "130mg par 100ml"
+      calories: "70 kcal par 100ml",
+      fat: "3g par 100ml",
+      protein: "3,5g par 100ml",
+      calcium: "130mg par 100ml"
     },
     image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Jovino1.jpg",
     "gallery": [
       "12",
     ],
     variants: [
-      { "id": "8-1", name: "Jovino Cocktail", price: "100 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Jovino1.jpg"}
+      { "id": "8-1", name: "Jovino Cocktail", price: "100 F CFA", image: "https://fehdcrvbbpsgeidqmjjt.supabase.co/storage/v1/object/public/product-images//Jovino1.jpg" }
     ],
     rating: 4.6,
     reviews: 137
   }
-  
+
 ]
 
 export default function ProductDetail() {
@@ -332,37 +332,35 @@ export default function ProductDetail() {
 
                 <div className="flex space-x-4 overflow-x-auto pb-2">
                   <div
-                    className={`relative h-20 w-20 rounded-lg cursor-pointer transition-all ${
-                      selectedImage === product.image
-                        ? "ring-2 ring-green-500 scale-105"
-                        : "hover:scale-105 bg-white/20 backdrop-blur-sm"
-                    }`}
+                    className={`relative h-20 w-20 rounded-lg cursor-pointer transition-all ${selectedImage === product.image
+                      ? "ring-2 ring-green-500 scale-105"
+                      : "hover:scale-105 bg-white/20 backdrop-blur-sm"
+                      }`}
                     onClick={() => setSelectedImage(product.image)}
                   >
                     <Image
                       src={product.image || "/produit1.jpg"}
                       alt={product.name}
-                      width={100}
-                      height={100}
-                      className="object-contain p-2"
+                      width={50}
+                      height={50}
+                      className="object-contain w-full h-full p-2"
                     />
                   </div>
                   {product.gallery.map((img: string, idx: number) => (
                     <div
                       key={idx}
-                      className={`relative h-20 w-20 rounded-lg cursor-pointer transition-all ${
-                        selectedImage === img
-                          ? "ring-2 ring-green-500 scale-105"
-                          : "hover:scale-105 bg-white/20 backdrop-blur-sm"
-                      }`}
+                      className={`relative h-20 w-20 rounded-lg cursor-pointer transition-all ${selectedImage === img
+                        ? "ring-2 ring-green-500 scale-105"
+                        : "hover:scale-105 bg-white/20 backdrop-blur-sm"
+                        }`}
                       onClick={() => setSelectedImage(img)}
                     >
                       <Image
                         src={img || "/produit1.jpg"}
                         alt={`${product.name} ${idx + 1}`}
-                        width={100}
-                        height={100}
-                        className="object-contain p-2"
+                        width={50}
+                        height={50}
+                        className="object-contain w-full h-full p-2"
                       />
                     </div>
                   ))}
@@ -404,20 +402,19 @@ export default function ProductDetail() {
                     {product.variants.map((variant: any) => (
                       <div
                         key={variant.id}
-                        className={`relative p-4 rounded-xl cursor-pointer transition-all ${
-                          selectedVariant?.id === variant.id
-                            ? "bg-green-100/70 border-2 border-green-500"
-                            : "bg-white/30 backdrop-blur-sm border border-white/50 hover:bg-white/50"
-                        }`}
+                        className={`relative p-4 rounded-xl cursor-pointer transition-all ${selectedVariant?.id === variant.id
+                          ? "bg-green-100/70 border-2 border-green-500"
+                          : "bg-white/30 backdrop-blur-sm border border-white/50 hover:bg-white/50"
+                          }`}
                         onClick={() => setSelectedVariant(variant)}
                       >
                         <div className="relative h-16 w-16 mx-auto mb-2">
                           <Image
                             src={variant.image || "/produit1.jpg"}
                             alt={variant.name}
-                            width={100}
-                            height={100}
-                            className="object-contain"
+                            width={50}
+                            height={50}
+                            className="object-contain w-full h-full p-2"
                           />
                         </div>
                         <div className="text-center">
@@ -516,9 +513,9 @@ export default function ProductDetail() {
                       <Image
                         src={relatedProduct.image || "/produit1.jpg"}
                         alt={relatedProduct.name}
-                        width={100}
-                        height={100}
-                        className="object-contain p-4"
+                        width={50}
+                        height={50}
+                        className="object-contain w-full h-full p-2"
                       />
                     </div>
                     <div className="p-6">
