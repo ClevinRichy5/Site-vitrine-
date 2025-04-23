@@ -16,56 +16,6 @@ export interface Product {
   rating: number
   category: string
 }
-const productss = [
-  {
-    id: "1",
-    name: "BreakSoy",
-    description: "BreakSay est notre boisson lactée chocolatée phare...",
-    image: "/produits/chocolatt.jpg",
-  },
-  {
-    id: "2",
-    name: "Riverr",
-    description: "Riverr est notre boisson rafraîchissante aux fruits tropicaux...",
-    image: "/produits/pomme (2).jpg",
-  },
-  {
-    id: "3",
-    name: "Nouriss",
-    description: "Nouriss est notre yaourt à la vanille premium, élaboré avec soin...",
-    image: "/produits/Home_Nos marques_Yaourts_Nouriss 250ml_Vanille_1506 x 1000.jpg",
-  },
-  {
-    id: "4",
-    name: "jem velouté",
-    description: "Notre Yaourt jem velouté est un classique intemporel...",
-    image: "/produits/Home_Nos marques_Yaourts_Jem 200g_Nature_1000 x 1506",
-  },
-  {
-    id: "5",
-    name: "Buerre gusta",
-    description: "Gusta est notre margarine premium, idéale pour toutes vos préparations...",
-    image: "/produits/Home_Nos marques_Margarine_Gusta_900 x 600_3.jpg",
-  },
-  {
-    id: "6",
-    name: "la bergere instant",
-    description: "Notre bergere instant est un lait entier pasteurisé de la plus haute qualité...",
-    image: "/produits/Home_Nos marques_Lait_La BI_1000 x 1506.jpg",
-  },
-  {
-    id: "7",
-    name: "Fruidou",
-    description: "Fruidou est une boisson lactée légère et fruitée, fabriquée par Camlait...",
-    image: "/produits/orange.jpg",
-  },
-  {
-    id: "8",
-    name: "Jovino",
-    description: "Jovino est une boisson lactée onctueuse et nourrissante...",
-    image: "/produits/Jovino1.jpg",
-  },
-]
 
 export const products: Product[] = [
   {
@@ -73,7 +23,7 @@ export const products: Product[] = [
     name: "BreakSoy",
     description:
       "BreakSay est notre boisson lactée chocolatée phare, élaborée à partir d'ingrédients de qualité supérieure pour un goût riche et onctueux qui ravira vos papilles.",
-    image: "/produits/chocolatt.jpg",
+    image: "/images/chocolatt.jpg",
     price: 3.99,
     rating: 4.7,
     category: "Boissons",
@@ -83,7 +33,7 @@ export const products: Product[] = [
     name: "Riverr",
     description:
       "Riverr est notre boisson rafraîchissante aux fruits tropicaux, parfaite pour étancher votre soif pendant les journées chaudes avec sa saveur exotique et revigorante.",
-    image: "/produits/pomme (2).jpg",
+    image: "/images/pomme (2).jpg",
     price: 2.49,
     rating: 4.5,
     category: "Boissons",
@@ -93,7 +43,7 @@ export const products: Product[] = [
     name: "Nouriss",
     description:
       "Nouriss est notre yaourt à la vanille premium, élaboré avec soin pour offrir une texture crémeuse et un goût authentique qui en fait le compagnon idéal de vos petits-déjeuners.",
-    image: "/produits/Home_Nos marques_Yaourts_Nouriss 250ml_Vanille_1506 x 1000.jpg",
+    image: "/images/Home_Nos marques_Yaourts_Nouriss 250ml_Vanille_1506 x 1000.jpg",
     price: 1.99,
     rating: 4.8,
     category: "Yaourts",
@@ -103,7 +53,7 @@ export const products: Product[] = [
     name: "Jem Velouté",
     description:
       "Notre Yaourt Jem Velouté est un classique intemporel, apprécié pour sa texture soyeuse et son goût équilibré qui en fait un en-cas sain et délicieux à tout moment de la journée.",
-    image: "/produits/Home_Nos marques_Yaourts_Jem 200g_Nature_1000 x 1506",
+    image: "/images/Home_Nos marques_Yaourts_Jem 200g_Nature_1000 x 1506",
     price: 1.79,
     rating: 4.6,
     category: "Yaourts",
@@ -113,7 +63,7 @@ export const products: Product[] = [
     name: "Beurre Gusta",
     description:
       "Gusta est notre margarine premium, idéale pour toutes vos préparations culinaires grâce à sa texture facile à tartiner et son goût riche qui sublimera vos plats.",
-    image: "/produits/Home_Nos marques_Margarine_Gusta_900 x 600_3.jpg",
+    image: "/images/Home_Nos marques_Margarine_Gusta_900 x 600_3.jpg",
     price: 4.29,
     rating: 4.4,
     category: "Beurres",
@@ -123,7 +73,7 @@ export const products: Product[] = [
     name: "La Bergère Instant",
     description:
       "Notre Bergère Instant est un lait entier pasteurisé de la plus haute qualité, source de calcium et de vitamines essentielles pour une alimentation équilibrée.",
-    image: "/produits/Home_Nos marques_Lait_La BI_1000 x 1506.jpg",
+    image: "/images/Home_Nos marques_Lait_La BI_1000 x 1506.jpg",
     price: 2.99,
     rating: 4.9,
     category: "Laits",
@@ -133,7 +83,7 @@ export const products: Product[] = [
     name: "Fruidou",
     description:
       "Fruidou est une boisson lactée légère et fruitée, fabriquée par Camlait, qui combine les bienfaits du lait avec la saveur rafraîchissante des fruits pour un moment de plaisir sain.",
-    image: "/produits/orange.jpg",
+    image: "/images/orange.jpg",
     price: 2.79,
     rating: 4.3,
     category: "Boissons",
@@ -143,7 +93,7 @@ export const products: Product[] = [
     name: "Jovino",
     description:
       "Jovino est une boisson lactée onctueuse et nourrissante, idéale pour les enfants et les adultes qui recherchent une option savoureuse pour compléter leur alimentation quotidienne.",
-    image: "/produits/Jovino1.jpg",
+    image: "/images/Jovino1.jpg",
     price: 3.49,
     rating: 4.7,
     category: "Boissons",
