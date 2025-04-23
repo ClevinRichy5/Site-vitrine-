@@ -54,7 +54,7 @@ export const products: Product[] = [
     description:
       "Notre Yaourt Jem Velouté est un classique intemporel, apprécié pour sa texture soyeuse et son goût équilibré qui en fait un en-cas sain et délicieux à tout moment de la journée.",
     image: "/images/Home_Nos marques_Lait_La BI_1000 x 1506.jpg",
-    price: 100,
+    price: 150,
     rating: 4.6,
     category: "Yaourts",
   },
@@ -64,7 +64,7 @@ export const products: Product[] = [
     description:
       "Gusta est notre margarine premium, idéale pour toutes vos préparations culinaires grâce à sa texture facile à tartiner et son goût riche qui sublimera vos plats.",
     image: "/images/Home_Nos marques_Margarine_Gusta_900 x 600_3.jpg",
-    price: 500,
+    price: 2500,
     rating: 4.4,
     category: "Beurres",
   },

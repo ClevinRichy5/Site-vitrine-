@@ -114,7 +114,7 @@ const productsData = [
       "Notre Yaourt jem velouté est un classique intemporel, élaboré selon des méthodes traditionnelles pour préserver toute l'authenticité du lait.",
     longDescription:
       " Sans sucre ajouté, il vous offre une expérience gustative pure et peut être consommé nature ou agrémenté selon vos envies.\n\n roirs.\n\n être consommé nature ou agrémenté selon vos envies.",
-    price: "100 F CFA",
+    price: "150 F CFA",
     volume: "200g",
     nutritionalInfo: {
       calories: "80 kcal par 100g",
@@ -143,7 +143,7 @@ const productsData = [
       "Margarine premium pour cuisine et pâtisserie.",
     longDescription:
       " Gusta est notre margarine premium, idéale pour toutes vos préparations culinaires. Sa texture onctueuse et son goût délicat en font un allié précieux en cuisine comme en pâtisserie.\n\n être consommé nature ou agrémenté selon vos envies.",
-    price: "500 F CFA",
+    price: "2500 F CFA",
     volume: "500g",
     nutritionalInfo: {
       calories: "80 kcal par 100g",
