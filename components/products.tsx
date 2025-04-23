@@ -19,69 +19,56 @@ export default function Products() {
   const isInView = useInView(ref, { once: true, amount: 0.2 })
   const [activeProduct, setActiveProduct] = useState(0)
 
+  console.log("isInView", isInView) // debug
+
   const products = [
     {
       id: "1",
       name: "BreakSoy",
       description: "BreakSay est notre boisson lactée chocolatée phare...",
-      image:
-        "/produits/chocolatt.jpg",
+      image: "/produits/chocolatt.jpg",
     },
     {
       id: "2",
       name: "Riverr",
-      description:
-        "Riverr est notre boisson rafraîchissante aux fruits tropicaux...",
-      image:
-        "/produits/pomme (2).jpg",
+      description: "Riverr est notre boisson rafraîchissante aux fruits tropicaux...",
+      image: "/produits/pomme (2).jpg",
     },
     {
       id: "3",
       name: "Nouriss",
-      description:
-        "Nouriss est notre yaourt à la vanille premium, élaboré avec soin...",
-      image:
-        "/produits/Home_Nos marques_Yaourts_Nouriss 250ml_Vanille_1506 x 1000.jpg",
+      description: "Nouriss est notre yaourt à la vanille premium, élaboré avec soin...",
+      image: "/produits/Home_Nos marques_Yaourts_Nouriss 250ml_Vanille_1506 x 1000.jpg",
     },
     {
       id: "4",
       name: "jem velouté",
-      description:
-        "Notre Yaourt jem velouté est un classique intemporel...",
-      image:
-        "/produits/Home_Nos marques_Yaourts_Jem 200g_Nature_1000 x 1506",
+      description: "Notre Yaourt jem velouté est un classique intemporel...",
+      image: "/produits/Home_Nos marques_Yaourts_Jem 200g_Nature_1000 x 1506",
     },
     {
       id: "5",
       name: "Buerre gusta",
-      description:
-        "Gusta est notre margarine premium, idéale pour toutes vos préparations...",
-      image:
-        "/produits/Home_Nos marques_Margarine_Gusta_900 x 600_3.jpg",
+      description: "Gusta est notre margarine premium, idéale pour toutes vos préparations...",
+      image: "/produits/Home_Nos marques_Margarine_Gusta_900 x 600_3.jpg",
     },
     {
       id: "6",
       name: "la bergere instant",
-      description:
-        "Notre bergere instant est un lait entier pasteurisé de la plus haute qualité...",
-      image:
-        "/produits/Home_Nos marques_Lait_La BI_1000 x 1506.jpg",
+      description: "Notre bergere instant est un lait entier pasteurisé de la plus haute qualité...",
+      image: "/produits/Home_Nos marques_Lait_La BI_1000 x 1506.jpg",
     },
     {
       id: "7",
       name: "Fruidou",
-      description:
-        "Fruidou est une boisson lactée légère et fruitée, fabriquée par Camlait...",
-      image:
-        "/produits/orange.jpg",
+      description: "Fruidou est une boisson lactée légère et fruitée, fabriquée par Camlait...",
+      image: "/produits/orange.jpg",
     },
     {
       id: "8",
       name: "Jovino",
-      description:
-        "Jovino est une boisson lactée onctueuse et nourrissante...",
-      image:
-        "/produits/Jovino1.jpg",
+      description: "Jovino est une boisson lactée onctueuse et nourrissante...",
+      image: "/produits/Jovino1.jpg",
     },
   ]
 
@@ -89,9 +76,7 @@ export default function Products() {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
+      transition: { staggerChildren: 0.2 },
     },
   }
 
@@ -105,7 +90,11 @@ export default function Products() {
   }
 
   return (
-    <section id="products" className="py-20 bg-white" ref={ref}>
+    <section
+      id="products"
+      className="py-20 bg-white min-h-[50vh] relative z-10"
+      ref={ref}
+    >
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
