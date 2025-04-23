@@ -27,7 +27,7 @@ const productsData = [
       "Notre BreakSoy, riche en saveur et en nutriments. Parfait pour toute la famille. Provenant de vaches élevées en pâturage libre, ce lait est non seulement délicieux mais aussi éthique et durable.",
     longDescription:
       "BreakSoy est le fruit d'un savoir-faire transmis de génération en génération. Nos vaches paissent librement dans les prairies verdoyantes, se nourrissant d'herbe fraîche et de foin naturel. Ce mode d'élevage traditionnel et respectueux garantit un lait d'une qualité exceptionnelle, riche en vitamines A et D, en calcium et en protéines essentielles.\n\nChaque gorgée vous offre une expérience crémeuse et satisfaisante, idéale pour accompagner vos céréales du matin, enrichir vos recettes ou simplement être dégustée pure pour apprécier sa saveur authentique. Notre processus de pasteurisation préserve les qualités nutritionnelles tout en garantissant une sécurité alimentaire optimale.",
-    price: "150 F CFA",
+    price: "250 F CFA",
     volume: "500ml",
     nutritionalInfo: {
       calories: "65 kcal par 100ml",
@@ -56,7 +56,7 @@ const productsData = [
       "Toute la bonté avec moins de matières grasses. Idéal pour ceux qui surveillent leur apport calorique tout en profitant des bienfaits nutritionnels du lait.",
     longDescription:
       "Notre lait Riverr offre un équilibre parfait entre goût crémeux et légèreté. Avec seulement 1,5% de matières grasses, il constitue une option plus légère que le lait entier, tout en conservant sa richesse en calcium, protéines et vitamines essentielles.\n\nProduit dans le respect de nos valeurs d'agriculture durable, ce lait provient de vaches nourries principalement à l'herbe et élevées dans des conditions optimales de bien-être animal. Chaque étape de production est soigneusement contrôlée pour vous garantir un produit de la plus haute qualité.\n\nPolyvalent, il s'intègre parfaitement dans votre quotidien : dans votre café, vos smoothies, vos préparations culinaires ou simplement dans un verre pour une pause rafraîchissante et nutritive.",
-    price: "100 F CFA",
+    price: "300 F CFA",
     volume: "1L",
     nutritionalInfo: {
       calories: "46 kcal par 100ml",
@@ -201,7 +201,7 @@ const productsData = [
       "Boisson lactée fruitée rafraîchissante.",
     longDescription:
       "Fruidou est une boisson lactée légère et fruitée, fabriquée par Camlait. Elle associe la douceur du lait à la fraîcheur des fruits pour offrir une boisson savoureuse et désaltérante. Idéale pour les pauses gourmandes, les petits-déjeuners ou les goûters des petits comme des grands.",
-    price: "300 F CFA",
+    price: "1000 F CFA",
     volume: "1L",
     nutritionalInfo: {
       calories: "65 kcal par 100ml",
