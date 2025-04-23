@@ -1,185 +1,267 @@
 "use client"
 
-import { useState, useRef } from "react"
-import { useInView } from "framer-motion"
+import { useState } from "react"
 import Image from "next/image"
-import { motion } from "framer-motion"
 import Link from "next/link"
-import { ArrowRight } from "lucide-react"
-import { Pacifico } from "next/font/google"
+import { motion } from "framer-motion"
+import { ArrowRight, Star, ShoppingCart } from "lucide-react"
 
-const pacifico = Pacifico({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-pacifico",
-})
+// Types pour nos produits
+export interface Product {
+  id: string
+  name: string
+  description: string
+  image: string
+  price: number
+  rating: number
+  category: string
+}
+const productss = [
+  {
+    id: "1",
+    name: "BreakSoy",
+    description: "BreakSay est notre boisson lactée chocolatée phare...",
+    image: "/produits/chocolatt.jpg",
+  },
+  {
+    id: "2",
+    name: "Riverr",
+    description: "Riverr est notre boisson rafraîchissante aux fruits tropicaux...",
+    image: "/produits/pomme (2).jpg",
+  },
+  {
+    id: "3",
+    name: "Nouriss",
+    description: "Nouriss est notre yaourt à la vanille premium, élaboré avec soin...",
+    image: "/produits/Home_Nos marques_Yaourts_Nouriss 250ml_Vanille_1506 x 1000.jpg",
+  },
+  {
+    id: "4",
+    name: "jem velouté",
+    description: "Notre Yaourt jem velouté est un classique intemporel...",
+    image: "/produits/Home_Nos marques_Yaourts_Jem 200g_Nature_1000 x 1506",
+  },
+  {
+    id: "5",
+    name: "Buerre gusta",
+    description: "Gusta est notre margarine premium, idéale pour toutes vos préparations...",
+    image: "/produits/Home_Nos marques_Margarine_Gusta_900 x 600_3.jpg",
+  },
+  {
+    id: "6",
+    name: "la bergere instant",
+    description: "Notre bergere instant est un lait entier pasteurisé de la plus haute qualité...",
+    image: "/produits/Home_Nos marques_Lait_La BI_1000 x 1506.jpg",
+  },
+  {
+    id: "7",
+    name: "Fruidou",
+    description: "Fruidou est une boisson lactée légère et fruitée, fabriquée par Camlait...",
+    image: "/produits/orange.jpg",
+  },
+  {
+    id: "8",
+    name: "Jovino",
+    description: "Jovino est une boisson lactée onctueuse et nourrissante...",
+    image: "/produits/Jovino1.jpg",
+  },
+]
 
-export default function Products() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.2 })
-  const [activeProduct, setActiveProduct] = useState(0)
+export const products: Product[] = [
+  {
+    id: "1",
+    name: "BreakSoy",
+    description:
+      "BreakSay est notre boisson lactée chocolatée phare, élaborée à partir d'ingrédients de qualité supérieure pour un goût riche et onctueux qui ravira vos papilles.",
+    image: "/produits/chocolatt.jpg",
+    price: 3.99,
+    rating: 4.7,
+    category: "Boissons",
+  },
+  {
+    id: "2",
+    name: "Riverr",
+    description:
+      "Riverr est notre boisson rafraîchissante aux fruits tropicaux, parfaite pour étancher votre soif pendant les journées chaudes avec sa saveur exotique et revigorante.",
+    image: "/produits/pomme (2).jpg",
+    price: 2.49,
+    rating: 4.5,
+    category: "Boissons",
+  },
+  {
+    id: "3",
+    name: "Nouriss",
+    description:
+      "Nouriss est notre yaourt à la vanille premium, élaboré avec soin pour offrir une texture crémeuse et un goût authentique qui en fait le compagnon idéal de vos petits-déjeuners.",
+    image: "/produits/Home_Nos marques_Yaourts_Nouriss 250ml_Vanille_1506 x 1000.jpg",
+    price: 1.99,
+    rating: 4.8,
+    category: "Yaourts",
+  },
+  {
+    id: "4",
+    name: "Jem Velouté",
+    description:
+      "Notre Yaourt Jem Velouté est un classique intemporel, apprécié pour sa texture soyeuse et son goût équilibré qui en fait un en-cas sain et délicieux à tout moment de la journée.",
+    image: "/produits/Home_Nos marques_Yaourts_Jem 200g_Nature_1000 x 1506",
+    price: 1.79,
+    rating: 4.6,
+    category: "Yaourts",
+  },
+  {
+    id: "5",
+    name: "Beurre Gusta",
+    description:
+      "Gusta est notre margarine premium, idéale pour toutes vos préparations culinaires grâce à sa texture facile à tartiner et son goût riche qui sublimera vos plats.",
+    image: "/produits/Home_Nos marques_Margarine_Gusta_900 x 600_3.jpg",
+    price: 4.29,
+    rating: 4.4,
+    category: "Beurres",
+  },
+  {
+    id: "6",
+    name: "La Bergère Instant",
+    description:
+      "Notre Bergère Instant est un lait entier pasteurisé de la plus haute qualité, source de calcium et de vitamines essentielles pour une alimentation équilibrée.",
+    image: "/produits/Home_Nos marques_Lait_La BI_1000 x 1506.jpg",
+    price: 2.99,
+    rating: 4.9,
+    category: "Laits",
+  },
+  {
+    id: "7",
+    name: "Fruidou",
+    description:
+      "Fruidou est une boisson lactée légère et fruitée, fabriquée par Camlait, qui combine les bienfaits du lait avec la saveur rafraîchissante des fruits pour un moment de plaisir sain.",
+    image: "/produits/orange.jpg",
+    price: 2.79,
+    rating: 4.3,
+    category: "Boissons",
+  },
+  {
+    id: "8",
+    name: "Jovino",
+    description:
+      "Jovino est une boisson lactée onctueuse et nourrissante, idéale pour les enfants et les adultes qui recherchent une option savoureuse pour compléter leur alimentation quotidienne.",
+    image: "/produits/Jovino1.jpg",
+    price: 3.49,
+    rating: 4.7,
+    category: "Boissons",
+  },
+]
 
-  console.log("isInView", isInView) // debug
+export default function ProductList() {
+  const [hoveredId, setHoveredId] = useState<string | null>(null)
 
-  const products = [
-    {
-      id: "1",
-      name: "BreakSoy",
-      description: "BreakSay est notre boisson lactée chocolatée phare...",
-      image: "/produits/chocolatt.jpg",
-    },
-    {
-      id: "2",
-      name: "Riverr",
-      description: "Riverr est notre boisson rafraîchissante aux fruits tropicaux...",
-      image: "/produits/pomme (2).jpg",
-    },
-    {
-      id: "3",
-      name: "Nouriss",
-      description: "Nouriss est notre yaourt à la vanille premium, élaboré avec soin...",
-      image: "/produits/Home_Nos marques_Yaourts_Nouriss 250ml_Vanille_1506 x 1000.jpg",
-    },
-    {
-      id: "4",
-      name: "jem velouté",
-      description: "Notre Yaourt jem velouté est un classique intemporel...",
-      image: "/produits/Home_Nos marques_Yaourts_Jem 200g_Nature_1000 x 1506",
-    },
-    {
-      id: "5",
-      name: "Buerre gusta",
-      description: "Gusta est notre margarine premium, idéale pour toutes vos préparations...",
-      image: "/produits/Home_Nos marques_Margarine_Gusta_900 x 600_3.jpg",
-    },
-    {
-      id: "6",
-      name: "la bergere instant",
-      description: "Notre bergere instant est un lait entier pasteurisé de la plus haute qualité...",
-      image: "/produits/Home_Nos marques_Lait_La BI_1000 x 1506.jpg",
-    },
-    {
-      id: "7",
-      name: "Fruidou",
-      description: "Fruidou est une boisson lactée légère et fruitée, fabriquée par Camlait...",
-      image: "/produits/orange.jpg",
-    },
-    {
-      id: "8",
-      name: "Jovino",
-      description: "Jovino est une boisson lactée onctueuse et nourrissante...",
-      image: "/produits/Jovino1.jpg",
-    },
-  ]
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { staggerChildren: 0.2 },
-    },
-  }
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6 },
-    },
+  // Fonction pour afficher les étoiles de notation
+  const renderRatingStars = (rating: number) => {
+    return Array.from({ length: 5 }).map((_, i) => (
+      <Star
+        key={i}
+        className={`w-4 h-4 ${
+          i < Math.floor(rating)
+            ? "fill-yellow-400 text-yellow-400"
+            : i < rating
+              ? "fill-yellow-400 text-yellow-400 opacity-50"
+              : "text-gray-300"
+        }`}
+      />
+    ))
   }
 
   return (
-    <section
-      id="products"
-      className="py-20 bg-white min-h-[50vh] relative z-10"
-      ref={ref}
-    >
-      <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-          transition={{ duration: 0.6 }}
-          className="text-center max-w-3xl mx-auto mb-16"
-        >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 leading-tight">
-            Nos <span className="text-green-600">Produits Laitiers</span> Premium
-          </h2>
-          <div className="w-20 h-1 bg-green-600 mt-4 mx-auto"></div>
-          <p className="mt-6 text-gray-600 text-lg">
-            Découvrez notre gamme de produits laitiers de haute qualité, élaborés avec soin et passion pour votre santé
-            et votre plaisir.
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      <div className="container mx-auto px-4 py-16">
+        <div className="text-center mb-16">
+          <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent">
+            Nos Produits Premium
+          </h1>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Découvrez notre sélection de produits laitiers de haute qualité, élaborés avec soin pour satisfaire vos
+            papilles et contribuer à votre bien-être quotidien.
           </p>
-        </motion.div>
+        </div>
 
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
-        >
-          {products.map((product, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          {products.map((product) => (
             <motion.div
               key={product.id}
-              variants={itemVariants}
-              whileHover={{ scale: 1.03 }}
-              className={`group relative bg-gradient-to-br from-white/50 to-green-50/30 backdrop-blur-lg rounded-3xl overflow-hidden shadow-xl border border-white/30 transition-all duration-300 transform hover:-translate-y-2 ${
-                activeProduct === index ? "ring-2 ring-green-500" : ""
-              }`}
-              onClick={() => setActiveProduct(index)}
+              className="group relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              whileHover={{
+                y: -5,
+                transition: { duration: 0.2 },
+              }}
+              onMouseEnter={() => setHoveredId(product.id)}
+              onMouseLeave={() => setHoveredId(null)}
             >
-              <div className="relative h-64 w-full overflow-hidden">
-                <motion.div
-                  whileHover={{ scale: 1.15, rotate: -4 }}
-                  transition={{ type: "spring", stiffness: 100 }}
-                  className="w-full h-full"
-                >
-                  <Image
-                    src={product.image}
-                    alt={product.name}
-                    width={100}
-                    height={100}
-                    className="object-contain w-full h-full p-6 transition-transform duration-500"
-                  />
-                </motion.div>
-                <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-white/80 via-white/30 to-transparent p-4">
-                  <h3 className={`${pacifico.className} text-lg font-bold text-gray-800 text-center truncate`}>
-                    {product.name}
-                  </h3>
-                </div>
+              {/* Badge de catégorie */}
+              <div className="absolute top-4 left-4 z-10">
+                <span className="px-3 py-1 bg-emerald-500 text-white text-xs font-semibold rounded-full">
+                  {product.category}
+                </span>
               </div>
-              <div className="p-5 bg-white/50 backdrop-blur-md">
-                <p className="text-gray-600 text-sm mb-4 line-clamp-3">
-                  {product.description}
-                </p>
-                <div className="flex justify-center">
+
+              {/* Image du produit */}
+              <div className="relative h-64 overflow-hidden">
+                <Image
+                  src={product.image || "/placeholder.svg"}
+                  alt={product.name}
+                  fill
+                  className="object-cover transition-transform duration-700 ease-in-out"
+                  style={{
+                    transform: hoveredId === product.id ? "scale(1.1)" : "scale(1)",
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+              </div>
+
+              {/* Contenu de la carte */}
+              <div className="p-6 relative">
+                {/* Prix */}
+                <div className="absolute -top-12 right-4 bg-white rounded-full h-16 w-16 flex items-center justify-center shadow-lg border-2 border-emerald-100 group-hover:border-emerald-300 transition-all duration-300">
+                  <span className="font-bold text-emerald-600">{product.price.toFixed(2)} F</span>
+                </div>
+
+                {/* Nom et évaluation */}
+                <div className="mb-4">
+                  <h2 className="text-2xl font-bold mb-2 text-gray-800 group-hover:text-emerald-600 transition-colors duration-300">
+                    {product.name}
+                  </h2>
+                  <div className="flex items-center gap-1 mb-2">
+                    {renderRatingStars(product.rating)}
+                    <span className="text-xs text-gray-500 ml-1">({product.rating})</span>
+                  </div>
+                </div>
+
+                {/* Description */}
+                <p className="text-gray-600 text-sm mb-6 line-clamp-2">{product.description}</p>
+
+                {/* Boutons d'action */}
+                <div className="flex items-center justify-between gap-4 mt-auto">
                   <Link
                     href={`/produits/${product.id}`}
-                    className="px-5 py-2 bg-green-600 text-white rounded-full shadow-lg hover:bg-green-700 transition-all duration-300 hover:shadow-xl flex items-center gap-2"
+                    className="group flex items-center text-emerald-600 font-medium text-sm hover:text-emerald-800 transition-colors"
                   >
-                    <span>Voir Détails</span>
-                    <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                    Voir détails
+                    <ArrowRight className="ml-1 w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
                   </Link>
+
+                  <motion.button
+                    className="flex items-center justify-center p-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-600 rounded-full transition-colors"
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <ShoppingCart className="w-5 h-5" />
+                    <span className="sr-only">Ajouter au panier</span>
+                  </motion.button>
                 </div>
               </div>
             </motion.div>
           ))}
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          className="text-center mt-12"
-        >
-          <Link
-            href="/produits"
-            className="inline-flex items-center bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 transition-all transform hover:scale-105 font-medium"
-          >
-            Voir Tous Nos Produits <ArrowRight className="ml-2 h-5 w-5" />
-          </Link>
-        </motion.div>
+        </div>
       </div>
-    </section>
+    </div>
   )
 }
