@@ -27,7 +27,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center">
-            <span className="text-2xl font-bold text-green-600">CAMLAIT</span>
+            <span className="text-2xl font-bold text-green-600">CAMLAIT SA</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -37,7 +37,6 @@ export default function Navbar() {
               { name: "Produits", href: "/#products" },
               { name: "Localisation", href: "/#ContactInfo" },
               { name: "À Propos", href: "/#about" },
-              { name: "Contact", href: "/#contact" },
             ].map((item) => (
               <Link
                 key={item.name}

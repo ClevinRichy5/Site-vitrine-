@@ -1,4 +1,5 @@
 import Navbar from "@/components/navbar"
+import Propos from "@/components/about"
 import Hero from "@/components/hero"
 import About from "@/components/about"
 import Products from "@/components/products"
@@ -14,7 +15,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Products />
-      <About />
+      <Propos />
       <ContactInfo />
       <Contact/>
       <Newsletter />

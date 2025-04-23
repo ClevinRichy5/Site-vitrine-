@@ -6,6 +6,8 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import { toast } from 'sonner';
+import { Facebook } from "lucide-react"
+
 
 export default function ContactForm(){
   // const { toast } = useToast();
@@ -72,6 +74,22 @@ export default function ContactForm(){
                     </p>
                   </div>
                 </div>
+                <div className="flex items-start">
+              <div className="mr-4 p-3 bg-blue-100 dark:bg-blue-900/30 rounded-full text-blue-600 dark:text-blue-400">
+                    <Facebook size={20} />
+                  </div>
+             <div>
+             <h4 className="text-lg font-medium text-gray-900 dark:text-white">Facebook</h4>
+            <a
+               href="https://www.facebook.com/CAMLaitSA" // Remplace par le vrai lien si différent
+            target="_blank"
+               rel="noopener noreferrer"
+           className="text-gray-600 dark:text-gray-300 hover:text-blue-600 underline"
+             >
+             CAMLAIT SA
+           </a>
+            </div>
+              </div>
               </div>
             </div>
           </div>

@@ -53,11 +53,13 @@ export default function Hero() {
             transition={{ duration: 0.8 }}
             className="text-center lg:text-left"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 leading-tight">
-              CAMLAIT, LA
-              <br />
-              FORCE DU LAIT
-            </h1>
+           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 leading-tight">
+            CAMLAIT SA,
+          <br />
+          <span className="text-2xl md:text-3xl lg:text-4xl font-light italic font-serif text-green-700">
+           LA FORCE DU LAIT
+        </span>
+          </h1>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a href="#products" className="bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 transition-all transform hover:scale-105 font-medium">
                 Explorer nos Produits

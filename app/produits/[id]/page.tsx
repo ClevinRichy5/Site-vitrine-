@@ -109,12 +109,12 @@ const productsData = [
   },
   {
     id: "4",
-    name: "jem velouté",
+    name: "La Bergère Instant",
     description:
       "Notre Yaourt jem velouté est un classique intemporel, élaboré selon des méthodes traditionnelles pour préserver toute l'authenticité du lait.",
     longDescription:
       " Sans sucre ajouté, il vous offre une expérience gustative pure et peut être consommé nature ou agrémenté selon vos envies.\n\n roirs.\n\n être consommé nature ou agrémenté selon vos envies.",
-    price: "400 F CFA",
+    price: "100 F CFA",
     volume: "200g",
     nutritionalInfo: {
       calories: "80 kcal par 100g",
@@ -122,16 +122,16 @@ const productsData = [
       protein: "7,5g par 100g",
       calcium: "95mg par 100g",
     },
-    image: "/images/Home_Nos marques_Yaourts_Jem 200g_Nature_1000 x 1506",
+    image: "/images/Home_Nos marques_Lait_La BI_1000 x 1506.jpg",
     gallery: [
       "/images/Home_Nos marques_Yaourts_Jem 200g_Fraise_1000 x 1506.jpg",
       "/images/Home_Nos marques_Yaourts_Jem 150g_Tare au citron_1000 x 1506.jpg",
       "/images/Home_Nos marques_Margarine_Gusta_4,5kg_1000 x 1506.jpg",
     ],
     variants: [
-      { id: "4-1", name: "jem velouté", price: "400 F CFA", image: "/images/Home_Nos marques_Margarine_Gusta_4,5kg_1000 x 1506.jpg" },
-      { id: "4-2", name: "jem velouté", price: "400 F CFA", image: "/images/Home_Nos marques_Margarine_Gusta_4,5kg_1000 x 1506.jpg" },
-      { id: "4-3", name: "jem velouté", price: "400 F CFA", image: "/images/Home_Nos marques_Margarine_Gusta_4,5kg_1000 x 1506.jpg" },
+      { id: "4-1", name: "La Bergère Instant", price: "100 F CFA", image: "/images/Home_Nos marques_Lait_La BI_1000 x 1506.jpg" },
+      { id: "4-2", name: "jem velouté", price: "400 F CFA", image: "/images/Home_Nos marques_Yaourts_Jem 200g_Fraise_1000 x 1506.jpg" },
+      { id: "4-3", name: "jem velouté", price: "400 F CFA", image: "/images/Home_Nos marques_Yaourts_Jem 150g_Tare au citron_1000 x 1506.jpg" },
     ],
     rating: 4.6,
     reviews: 87,
@@ -187,8 +187,8 @@ const productsData = [
       "/images/Home_Nos marques_Margarine_Gusta_4,5kg_1000 x 1506.jpg",
     ],
     variants: [
-      { id: "4-1", name: "jem velouté Nature", price: "400 F CFA", image: "/images/Home_Nos marques_Yaourts_Jem 150g_Tare au citron_1000 x 1506.jpg" },
-      { id: "4-2", name: "jem velouté Fraise", price: "400 F CFA", image: "/images/Home_Nos marques_Yaourts_Jem 150g_Tare au citron_1000 x 1506.jpg" },
+      { id: "4-1", name: "jem velouté Nature", price: "400 F CFA", image: "/images/Home_Nos marques_Yaourts_Jem 200g_Nature_1000 x 1506.jpg" },
+      { id: "4-2", name: "jem velouté Fraise", price: "400 F CFA", image: "/images/Home_Nos marques_Yaourts_Jem 200g_Fraise_1000 x 1506.jpg" },
       { id: "4-3", name: "jem velouté Tarte au citron", price: "400 F CFA", image: "/images/Home_Nos marques_Yaourts_Jem 150g_Tare au citron_1000 x 1506.jpg" },
     ],
     rating: 4.6,

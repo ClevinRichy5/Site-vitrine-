@@ -1,7 +1,6 @@
-// <<<<<<< HEAD
-// =======
+
 "use client"
-// >>>>>>> 1d9bc5d11437a8646a457dcb308db9b2dd5d24cf
+
 import React, { useEffect, useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone, Mail } from 'lucide-react';

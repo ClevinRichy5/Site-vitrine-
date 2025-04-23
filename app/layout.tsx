@@ -5,7 +5,7 @@ import { Open_Sans } from "next/font/google"
 const open_sans = Open_Sans({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Camlait - SARL",
+  title: "Camlait - SA",
   description:
     "Discover the richness of nature with our premium quality milk products, crafted with care from farm to table."
 }
