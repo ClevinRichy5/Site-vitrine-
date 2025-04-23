@@ -129,7 +129,7 @@ const productsData = [
       "/images/Home_Nos marques_Margarine_Gusta_4,5kg_1000 x 1506.jpg",
     ],
     variants: [
-      { id: "4-1", name: "La Bergère Instant", price: "100 F CFA", image: "/images/Home_Nos marques_Lait_La BI_1000 x 1506.jpg" },
+      { id: "4-1", name: "La Bergère Instant", price: "150 F CFA", image: "/images/Home_Nos marques_Lait_La BI_1000 x 1506.jpg" },
       { id: "4-2", name: "jem velouté", price: "400 F CFA", image: "/images/Home_Nos marques_Yaourts_Jem 200g_Fraise_1000 x 1506.jpg" },
       { id: "4-3", name: "jem velouté", price: "400 F CFA", image: "/images/Home_Nos marques_Yaourts_Jem 150g_Tare au citron_1000 x 1506.jpg" },
     ],
@@ -158,9 +158,9 @@ const productsData = [
       "/images/Home_Nos marques_Margarine_Gusta_900 x 600.png",
     ],
     variants: [
-      { id: "5-1", name: "Buerre gusta", price: "500 F CFA", image: "/images/Home_Nos marques_Margarine_Gusta_900 x 600.png" },
-      { id: "5-2", name: "Buerre gusta", price: "500 F CFA", image: "/images/Home_Nos marques_Margarine_Gusta_900 x 600.png" },
-      { id: "5-3", name: "Buerre gusta", price: "500 F CFA", image: "/images/Home_Nos marques_Margarine_Gusta_900 x 600.png" },
+      { id: "5-1", name: "Buerre gusta", price: "2500 F CFA", image: "/images/Home_Nos marques_Margarine_Gusta_900 x 600.png" },
+      { id: "5-2", name: "Buerre gusta", price: "2500 F CFA", image: "/images/Home_Nos marques_Margarine_Gusta_900 x 600.png" },
+      { id: "5-3", name: "Buerre gusta", price: "2500 F CFA", image: "/images/Home_Nos marques_Margarine_Gusta_900 x 600.png" },
     ],
     rating: 4.6,
     reviews: 87,
