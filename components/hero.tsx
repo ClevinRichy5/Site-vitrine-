@@ -54,7 +54,7 @@ export default function Hero() {
             className="text-center lg:text-left"
           >
            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 leading-tight">
-            CAMLAIT SA,
+            CAMLAIT SA
           <br />
           <span className="text-2xl md:text-3xl lg:text-4xl font-light italic font-serif text-green-700">
            LA FORCE DU LAIT
@@ -64,7 +64,7 @@ export default function Hero() {
               <a href="#products" className="bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 transition-all transform hover:scale-105 font-medium">
                 Explorer nos Produits
               </a>
-              <Link href={'/components/about'} className="border-2 border-green-600 text-green-600 px-8 py-3 rounded-full hover:bg-green-50 transition-all transform hover:scale-105 font-medium">
+              <Link href={'#about'} className="border-2 border-green-600 text-green-600 px-8 py-3 rounded-full hover:bg-green-50 transition-all transform hover:scale-105 font-medium">
                 En Savoir Plus
               </Link>
             </div>
