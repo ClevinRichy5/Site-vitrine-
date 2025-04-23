@@ -342,7 +342,8 @@ export default function ProductDetail() {
                     <Image
                       src={product.image || "/produit1.jpg"}
                       alt={product.name}
-                      fill
+                      width={100}
+                      height={100}
                       className="object-contain p-2"
                     />
                   </div>
@@ -359,7 +360,8 @@ export default function ProductDetail() {
                       <Image
                         src={img || "/produit1.jpg"}
                         alt={`${product.name} ${idx + 1}`}
-                        fill
+                        width={100}
+                        height={100}
                         className="object-contain p-2"
                       />
                     </div>
@@ -413,7 +415,8 @@ export default function ProductDetail() {
                           <Image
                             src={variant.image || "/produit1.jpg"}
                             alt={variant.name}
-                            fill
+                            width={100}
+                            height={100}
                             className="object-contain"
                           />
                         </div>
@@ -513,7 +516,8 @@ export default function ProductDetail() {
                       <Image
                         src={relatedProduct.image || "/produit1.jpg"}
                         alt={relatedProduct.name}
-                        fill
+                        width={100}
+                        height={100}
                         className="object-contain p-4"
                       />
                     </div>

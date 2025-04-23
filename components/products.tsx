@@ -141,7 +141,8 @@ export default function Products() {
                   <Image
                     src={product.image || "/produit1.jpg"}
                     alt={product.name}
-                    fill
+                    width={100}
+                    height={100}
                     className="object-contain p-6 transition-transform duration-500"
                   />
                 </motion.div>
