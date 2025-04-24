@@ -5,6 +5,9 @@ import Image from "next/image"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { ArrowRight, Star, ShoppingCart } from "lucide-react"
+import { Coins } from "lucide-react"
+
+
 
 // Types pour nos produits
 export interface Product {
@@ -124,7 +127,7 @@ export default function ProductList() {
       <div className="container mx-auto px-4 py-16">
         <div className="text-center mb-16">
           <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent">
-            Nos Produits Premium
+            Nos Produits
           </h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Découvrez notre sélection de produits laitiers de haute qualité, élaborés avec soin pour satisfaire vos
@@ -171,10 +174,12 @@ export default function ProductList() {
               {/* Contenu de la carte */}
               <div className="p-6 relative">
                 {/* Prix */}
-                <div className="absolute -top-12 right-4 bg-white rounded-full h-16 w-16 flex items-center justify-center shadow-lg border-2 border-emerald-100 group-hover:border-emerald-300 transition-all duration-300">
-                  <span className="font-bold text-emerald-600">{product.price.toFixed(2)} F</span>
+                <div className="absolute -top-12 right-4 h-16 w-16 rounded-full flex items-center justify-center shadow-lg border-2 border-emerald-100 group-hover:border-emerald-300 transition-all duration-500 hover:rotate-12 hover:scale-110 bg-gradient-to-br from-white via-emerald-50 to-white hover:from-emerald-100 hover:to-emerald-200">
+                <div className="flex flex-col items-center text-emerald-600">
+                <Coins className="w-5 h-5 mb-1" />
+              <span className="text-sm font-bold">{product.price.toFixed(2)}</span>
+                  </div>
                 </div>
-
                 {/* Nom et évaluation */}
                 <div className="mb-4">
                   <h2 className="text-2xl font-bold mb-2 text-gray-800 group-hover:text-emerald-600 transition-colors duration-300">
