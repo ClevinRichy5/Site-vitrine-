@@ -105,7 +105,7 @@ export const products: Product[] = [
 
 export default function ProductList() {
   const [hoveredId, setHoveredId] = useState<string | null>(null)
-
+  
   // Fonction pour afficher les étoiles de notation
   const renderRatingStars = (rating: number) => {
     return Array.from({ length: 5 }).map((_, i) => (

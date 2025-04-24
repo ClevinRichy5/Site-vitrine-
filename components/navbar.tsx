@@ -26,14 +26,10 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
-        <Link href="/" className="flex items-center space-x-1">
-        <span className="px-2 py-1 text-white text-2xl font-bold bg-gradient-to-br from-white via-emerald-100 to-emerald-500 rounded-md shadow-sm font-[Chicle]">
-           CAMLAIT
-        </span>
-        <span className="text-emerald-600 text-2xl font-semibold tracking-wide font-sans">
-              SA
-       </span>
-        </Link>
+          <Link href="/" className="flex items-center">
+            <span className="text-2xl font-bold text-green-600">CAMLAIT  SA</span>
+          </Link>
+
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {[
