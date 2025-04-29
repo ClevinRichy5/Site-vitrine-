@@ -359,7 +359,7 @@ export default function ProductDetail() {
                     className="absolute inset-0 flex items-center justify-center"
                   >
                     <Image
-                      src={selectedImage || "/produit1.jpg"}
+                      src={currentVariant?.image || "/produit1.jpg"}
                       alt={product.name}
                       width={350}
                       height={350}
@@ -369,39 +369,8 @@ export default function ProductDetail() {
                 </div>
 
                 <div className="flex space-x-4 overflow-x-auto pb-2">
-                  <div
-                    className={`relative h-20 w-20 rounded-lg cursor-pointer transition-all ${selectedImage === product.image
-                      ? "ring-2 ring-green-500 scale-105"
-                      : "hover:scale-105 bg-white/20 backdrop-blur-sm"
-                      }`}
-                    onClick={() => setSelectedImage(product.image)}
-                  >
-                    <Image
-                      src={product.image || "/produit1.jpg"}
-                      alt={product.name}
-                      width={50}
-                      height={50}
-                      className="object-contain w-full h-full p-2"
-                    />
-                  </div>
-                  {product.gallery.map((img: string, idx: number) => (
-                    <div
-                      key={idx}
-                      className={`relative h-20 w-20 rounded-lg cursor-pointer transition-all ${selectedImage === img
-                        ? "ring-2 ring-green-500 scale-105"
-                        : "hover:scale-105 bg-white/20 backdrop-blur-sm"
-                        }`}
-                      onClick={() => setSelectedImage(img)}
-                    >
-                      <Image
-                        src={img || "/produit1.jpg"}
-                        alt={`${product.name} ${idx + 1}`}
-                        width={50}
-                        height={50}
-                        className="object-contain w-full h-full p-2"
-                      />
-                    </div>
-                  ))}
+              
+
                 </div>
               </motion.div>
 
@@ -445,7 +414,7 @@ export default function ProductDetail() {
                           : "bg-white/30 backdrop-blur-sm border border-white/50 hover:bg-white/50"
                           }`}
                         onClick={() => {
-                          setSelectedImage(variant.image)
+                        
                           setCurrentVariante(variant)
                           setSelectedVariant(variant)
                         }}
