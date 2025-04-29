@@ -257,12 +257,40 @@ interface Variant {
   image: string
 }
 
+export interface Product {
+  id: string;
+  name: string;
+  description: string;
+  longDescription: string;
+  price: string;
+  volume: string;
+  nutritionalInfo: {
+    calories: string;
+    fat: string;
+    protein: string;
+    calcium: string;
+  };
+  image: string;
+  gallery: string[];
+  variants: Variant[];
+  rating: number;
+  reviews: number;
+}
+
+
 export default function ProductDetail() {
   const params = useParams()
-  const [product, setProduct] = useState<any>(null)
+  const [product, setProduct] = useState<Product>()
   const [loading, setLoading] = useState(true)
   const [selectedImage, setSelectedImage] = useState<string>("")
   const [selectedVariant, setSelectedVariant] = useState<any>(null)
+  const [currentVariant, setCurrentVariante] = useState<Variant | undefined>(undefined)
+
+  useEffect(() => {
+    if (product) {
+      setCurrentVariante(product.variants[0])
+    }
+  }, [product])
 
 
 
@@ -280,7 +308,7 @@ export default function ProductDetail() {
 
     fetchProduct()
   }, [params.id])
-
+  
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -299,6 +327,7 @@ export default function ProductDetail() {
       </div>
     )
   }
+
 
   return (
     <>
@@ -330,7 +359,7 @@ export default function ProductDetail() {
                     className="absolute inset-0 flex items-center justify-center"
                   >
                     <Image
-                      src={selectedImage || "/produit1.jpg"}
+                      src={currentVariant?.image || "/produit1.jpg"}
                       alt={product.name}
                       width={350}
                       height={350}
@@ -397,7 +426,7 @@ export default function ProductDetail() {
                       {product.rating} ({product.reviews} avis)
                     </span>
                   </div>
-                  <h1 className={` text-3xl md:text-4xl font-bold text-gray-800 mt-2`}>{product.name}</h1>
+                  <h1 className={` text-3xl md:text-4xl font-bold text-gray-800 mt-2`}>{currentVariant?.name}</h1>
                   <p className="text-xl text-green-600 font-semibold mt-2">{selectedVariant?.price || product.price}</p>
                 </div>
 
@@ -416,7 +445,8 @@ export default function ProductDetail() {
                           : "bg-white/30 backdrop-blur-sm border border-white/50 hover:bg-white/50"
                           }`}
                         onClick={() => {
-                          setSelectedImage(variant.image)
+                          
+                          setCurrentVariante(variant)
                           setSelectedVariant(variant)
                         }}
                       >
