@@ -136,6 +136,7 @@ const productsData = [
     rating: 4.6,
     reviews: 87,
   },
+  //test
   {
     id: "5",
     name: "beurre gusta",
@@ -249,12 +250,21 @@ const productsData = [
 
 ]
 
+interface Variant {
+  id: string,
+  name: string,
+  price: string,
+  image: string
+}
+
 export default function ProductDetail() {
   const params = useParams()
   const [product, setProduct] = useState<any>(null)
   const [loading, setLoading] = useState(true)
-  const [selectedImage, setSelectedImage] = useState("")
+  const [selectedImage, setSelectedImage] = useState<string>("")
   const [selectedVariant, setSelectedVariant] = useState<any>(null)
+
+
 
   useEffect(() => {
     // Simuler un chargement de données
@@ -398,14 +408,17 @@ export default function ProductDetail() {
                 <div className="space-y-4">
                   <h3 className="text-lg font-semibold text-gray-800">Variantes</h3>
                   <div className="flex flex-wrap gap-4">
-                    {product.variants.map((variant: any) => (
+                    {product.variants.map((variant: Variant) => (
                       <div
                         key={variant.id}
                         className={`relative p-4 rounded-xl cursor-pointer transition-all ${selectedVariant?.id === variant.id
                           ? "bg-green-100/70 border-2 border-green-500"
                           : "bg-white/30 backdrop-blur-sm border border-white/50 hover:bg-white/50"
                           }`}
-                        onClick={() => setSelectedVariant(variant)}
+                        onClick={() => {
+                          setSelectedImage(variant.image)
+                          setSelectedVariant(variant)
+                        }}
                       >
                         <div className="relative h-16 w-16 mx-auto mb-2">
                           <Image
