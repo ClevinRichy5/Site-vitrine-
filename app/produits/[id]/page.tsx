@@ -359,7 +359,7 @@ export default function ProductDetail() {
                     className="absolute inset-0 flex items-center justify-center"
                   >
                     <Image
-                      src={currentVariant?.image || "/produit1.jpg"}
+                      src={selectedImage || "/produit1.jpg"}
                       alt={product.name}
                       width={350}
                       height={350}
@@ -445,7 +445,7 @@ export default function ProductDetail() {
                           : "bg-white/30 backdrop-blur-sm border border-white/50 hover:bg-white/50"
                           }`}
                         onClick={() => {
-                          
+                          setSelectedImage(variant.image)
                           setCurrentVariante(variant)
                           setSelectedVariant(variant)
                         }}
