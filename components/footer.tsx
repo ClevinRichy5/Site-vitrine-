@@ -37,15 +37,15 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center">
                 <MapPin size={18} className="mr-2 text-green-500" />
-                <span className="text-gray-400">Douala 2PRG+6Q Douala</span>
+                <span className="text-gray-400"> Douala (Zone Industrielle Bassa) – Rue TRACTAFRIC</span>
               </li>
               <li className="flex items-center">
                 <Phone size={18} className="mr-2 text-green-500" />
-                <span className="text-gray-400">+237 233 37 28 05</span>
+                <span className="text-gray-400">+237 233 37 44 60</span>
               </li>
               <li className="flex items-center">
                 <Mail size={18} className="mr-2 text-green-500" />
-                <span className="text-gray-400">infos@camlait.cm</span>
+                <span className="text-gray-400">ovzuko@camlait.com</span>
               </li>
             </ul>
           </div>

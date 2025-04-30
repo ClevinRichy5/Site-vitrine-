@@ -71,9 +71,9 @@ const productsData = [
       "/images/Home_Nos marques_Boissons_Riverr 500ml_Fruits tropicaux_1000 x 1506.jpg",
     ],
     variants: [
-      { id: "2-1", name: "Riverr Soja", price: "300 F CFA", image: "/images/rorange.jpg" },
-      { id: "2-2", name: "Riverr Pomme", price: "300 F CFA", image: "/images/soya.jpg" },
-      { id: "2-3", name: "River Orange", price: "300 F CFA", image: "/images/Home_Nos marques_Boissons_Riverr 500ml_Fruits tropicaux_1000 x 1506.jpg" },
+      { id: "2-1", name: "Riverr Orange", price: "300 F CFA", image: "/images/rorange.jpg" },
+      { id: "2-2", name: "Riverr Soya", price: "300 F CFA", image: "/images/soya.jpg" },
+      { id: "2-3", name: "River Fruit Tropicaux", price: "300 F CFA", image: "/images/Home_Nos marques_Boissons_Riverr 500ml_Fruits tropicaux_1000 x 1506.jpg" },
     ],
     rating: 4.7,
     reviews: 98,
@@ -101,8 +101,6 @@ const productsData = [
     ],
     variants: [
       { id: "3-1", name: "Nouriss 250ml ", price: "250 F CFA", image: "/images/Home_Nos marques_Yaourts_Nouriss 250ml_Vanille_1506 x 1000.jpg" },
-      { id: "3-2", name: "Nouriss 250ml ", price: "250 F CFA", image: "/images/Home_Nos marques_Yaourts_Nouriss 250ml_Vanille_1506 x 1000.jpg" },
-      { id: "3-3", name: "Nouriss 250ml ", price: "250 F CFA", image: "/images/Home_Nos marques_Yaourts_Nouriss 250ml_Vanille_1506 x 1000.jpg" },
     ],
     rating: 4.9,
     reviews: 156,
@@ -155,8 +153,6 @@ const productsData = [
     image: "/images/Home_Nos marques_Margarine_Gusta_900 x 600_3.jpg",
     gallery: [
       "/images/Home_Nos marques_Margarine_Gusta_900 x 600_3.jpg",
-      "/images/Home_Nos marques_Margarine_Gusta_900 x 600.png",
-      "/images/Home_Nos marques_Margarine_Gusta_900 x 600.png",
     ],
     variants: [
       { id: "5-1", name: "Buerre gusta", price: "2500 F CFA", image: "/images/Home_Nos marques_Margarine_Gusta_900 x 600.png" },
@@ -217,9 +213,9 @@ const productsData = [
       "/images/pomme.jpg",
     ],
     variants: [
-      { id: "6-1", name: "Fruidou Goyave", price: "1000 F CFA", image: "/images/pomme.jpg" },
-      { id: "6-2", name: "Fruidou Orange", price: "1000 F CFA", image: "/images/pomme.jpg" },
-      { id: "6-3", name: "Fruidou Mangue", price: "1000 F CFA", image: "/images/pomme.jpg" },
+      { id: "6-1", name: "Fruidou Goyave", price: "1000 F CFA", image: "/images/FruidouGoyave.jpg" },
+      { id: "6-2", name: "Fruidou Pomme", price: "1000 F CFA", image: "/images/pomme.jpg" },
+      { id: "6-3", name: "Fruidou Mangue", price: "1000 F CFA", image: "/images/Mange.jpg" },
     ],
     rating: 4.7,
     reviews: 152,

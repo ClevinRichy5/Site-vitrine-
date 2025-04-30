@@ -48,10 +48,16 @@ const About = () => {
               Notre Histoire
             </h3>
             <p className={`mb-6 text-gray-700 transition-all duration-700 delay-100 ${animateElements ? 'opacity-100' : 'opacity-0'}`}>
-            CAMLAIT, entreprise agroalimentaire camerounaise, 
-            est le leader incontesté dans la production et la 
-            distribution de produits laitiers. Fondée en 1971, elle s'est rapidement imposée comme un acteur majeur du secteur agroalimentaire au Cameroun, alliant expertise
-            et savoir-faire pour offrir des produits de haute qualité.
+            CAMLAIT SA., est une Entreprise camerounaise, agroalimentaire spécialisée dans la
+           transformation et la distribution des produits faits à base de lait et de soja principalement,
+            sains et variés, destinés au bien être des consommateurs de tout âges du nourri sson à la
+          personne du 3e âge.
+        La Société Camerounaise de Produits Laitiers (CAMLAIT S.A.) est une société anonyme créée
+        en 1972 par un groupe d'entrepreneurs camerounais avec pour objectif de fournir le marché
+        camerounais en produits laitiers. C'est la première industrie locale de production de yaourts.
+        Créée alors sous la forme de SARL avec un capital de 15 millions Fcfa à la base, avec un
+      capital croissant, a vue son statut juridique changer. Elle est aujourd’hui une Société
+          Anonyme avec un capital de plus de 3 000 000 000 FCFA.
             </p>
             <div className={`flex flex-col sm:flex-row gap-4 transition-all duration-700 delay-300 ${animateElements ? 'opacity-100' : 'opacity-0'}`}>
               <Button className="bg-green-600 hover:bg-green-700">
@@ -135,14 +141,19 @@ const About = () => {
               Notre Vision
             </h3>
             <p className={`mb-6 text-gray-700 transition-all duration-700 ${animateElements ? 'opacity-100' : 'opacity-0'}`} style={{ transitionDelay: '800ms' }}>
-            Demain, CAMLAIT veut être une entreprise entièrement africaine de référence
-            mondiale, dans le domaine de la valorisation des matières premières issues de
-            l'agriculture locale et de l'élevage.
+            Fabrication des Yaourts à base du soja (40%) : NOURISS ;.
+             Fabrication des boissons nutritives et des goûters à base de fruits de saison, et de soja (17%)
+            :Fruidou, RIVERR SOY, BREAKSOY ;
+            Fabrication des Yaourts et crèmes glacée à base du lait de vache (28%) : CAMLAIT SUCRE,
+            JEM, PRESTIGE, CREME GLACEE ;
+            Conditionnement poudre de lait instantané en sachet (15%)   
             </p>
             <p className={`mb-6 text-gray-700 transition-all duration-700 ${animateElements ? 'opacity-100' : 'opacity-0'}`} style={{ transitionDelay: '900ms' }}>
-            Aujourd'hui, CAMLAIT est une entreprise camerounaise à vocation africaine,
-            spécialisée dans la transformation et la distribution des produits alimentaires de très
-            grande qualité.
+            CAMLAIT SA. Se fait accompagner par des partenaires stratégiques de référence de classe
+            internationale et locale qui respectent le même sens des valeurs que ceux imposés par le
+            marché et qui permettent d’assurer un service de qualité auprès de la clientèle. Notamment :
+            TETRA-PAK, INGREDIA, GAZ du Cameroun, PLASTICAM, MULTIPRINT, POINCAM, BIA
+            Cameroun, ICRAFON
             </p>
             <div className={`flex flex-col sm:flex-row gap-4 transition-all duration-700 ${animateElements ? 'opacity-100' : 'opacity-0'}`} style={{ transitionDelay: '1000ms' }}>
               <Button className="bg-green-600 hover:bg-green-700">

@@ -18,7 +18,7 @@ const ContactInfo = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {/* WhatsApp */}
           <a 
-            href="https://wa.me/+237233372805" 
+            href="https://wa.me/+237690600986" 
             target="_blank" 
             rel="noopener noreferrer"
             className="flex flex-col items-center p-6 bg-[#f1f9ed] rounded-xl shadow-sm hover:shadow-md transition-all hover:-translate-y-1 group"
@@ -27,7 +27,7 @@ const ContactInfo = () => {
               <MessageSquareText size={32} className="text-green-600" />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">WhatsApp</h3>
-            <p className="text-center text-gray-600">+237 233 37 28 05</p>
+            <p className="text-center text-gray-600">+237 690 60 09 86</p>
             <span className="mt-4 text-green-600 font-medium">Cliquez pour discuter</span>
           </a>
           
@@ -40,7 +40,7 @@ const ContactInfo = () => {
               <Mail size={32} className="text-green-600" />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">Email</h3>
-            <p className="text-center text-gray-600">infos@camlait.cm</p>
+            <p className="text-center text-gray-600">ovzuko@camlait.com</p>
             <span className="mt-4 text-green-600 font-medium">Cliquez pour envoyer un email</span>
           </a>
           
@@ -53,7 +53,7 @@ const ContactInfo = () => {
               <BriefcaseIcon size={32} className="text-green-600" />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">Direction</h3>
-            <p className="text-center text-gray-600">+237 233 37 28 05</p>
+            <p className="text-center text-gray-600">+237 233 37 44 60</p>
             <span className="mt-4 text-green-600 font-medium">Appeler la direction</span>
           </a>
           
@@ -66,7 +66,7 @@ const ContactInfo = () => {
               <Phone size={32} className="text-green-600" />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">Boutique</h3>
-            <p className="text-center text-gray-600">+237 333 333 333</p>
+            <p className="text-center text-gray-600">+237 233 37 28 05</p>
             <span className="mt-4 text-green-600 font-medium">Appeler la boutique</span>
           </a>
         </div>
@@ -84,7 +84,7 @@ const ContactInfo = () => {
                 <MapPin className="text-green-600 flex-shrink-0 mt-1" />
                 <div>
                   <h4 className="font-semibold text-gray-900">Adresse</h4>
-                  <p className="text-gray-600">123, Avenue de l'Indépendance<br/>Douala, Cameroun</p>
+                  <p className="text-gray-600">Douala (Zone Industrielle Bassa) – Rue TRACTAFRIC<br/>Douala, Cameroun</p>
                 </div>
               </div>
               
