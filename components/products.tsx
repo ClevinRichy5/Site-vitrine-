@@ -122,7 +122,7 @@ export default function ProductList() {
   }
 
   return (
-      <div className="min-h-screen bg-[url('/images/lait.jpg')] bg-cover bg-center relative">
+      <div className="min-h-screen bg-[url('/images/lait.jpg')] bg-cover bg-center relative" id="products" >
     
       <div className="container mx-auto px-4 py-16">
       <div className="text-center mb-16 bg-white/40 backdrop-blur-md rounded-xl p-6 shadow-lg">
