@@ -31,7 +31,7 @@ const About = () => {
   
   return (
     <section id="about" className="py-24 bg-[#f6fbf3]">
-      <div className="container mx-auto px-4 md:px-8">
+      <div className="min-h-screen bg-[url('/images/lait.jpg')] bg-cover bg-center relative">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
             À Propos de Nous
@@ -73,7 +73,7 @@ const About = () => {
           <div className="order-1 lg:order-2 relative">
             <div className={`relative z-10 rounded-xl overflow-hidden shadow-xl transition-all duration-1000 transform ${animateElements ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}`}>
               <Image 
-                src={companyHistory} 
+                src="/images/laboratoire.png" 
                 alt="Histoire de CAMLAIT" 
                 className="w-full h-auto object-cover rounded-xl"
                 style={{ maxHeight: '500px' }}
@@ -95,8 +95,8 @@ const About = () => {
           <div className="relative">
             <div className={`relative z-10 rounded-xl overflow-hidden shadow-xl transition-all duration-1000 transform ${animateElements ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}`} style={{ transitionDelay: '200ms' }}>
               <Image 
-                src={ceo} 
-                alt="Certification ISO" 
+                src="/images/route.png" 
+                alt="CAMLAIT YAOUNDE" 
                 className="w-full h-auto object-cover rounded-xl" 
                 style={{ maxHeight: '500px' }}
                 width={500}
@@ -104,9 +104,9 @@ const About = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-green-900/60 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-6 text-white">
-                <span className="text-sm font-semibold bg-green-600 px-3 py-1 rounded-full">Certification Iso</span>
-                <h4 className="text-xl font-bold mt-2">Certification 12/2371</h4>
-                <p className="text-white/80">SGS</p>
+                <span className="text-sm font-semibold bg-green-600 px-3 py-1 rounded-full">ZONE CAMLAIT</span>
+                <h4 className="text-xl font-bold mt-2">CAMLAIT YAOUNDE</h4>
+                {/* <p className="text-white/80">CAMLAIT YAOUNDE</p> */}
               </div>
             </div>
             <div className="absolute -bottom-10 -left-5 w-40 h-40 bg-green-300/20 rounded-full blur-3xl animate-pulse z-0"></div>
@@ -167,7 +167,7 @@ const About = () => {
           <div className="order-1 lg:order-2 relative">
             <div className={`relative z-10 rounded-xl overflow-hidden shadow-xl transition-all duration-1000 transform ${animateElements ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}`} style={{ transitionDelay: '1100ms' }}>
               <img 
-                src={family} 
+                src="/images/labo2.png" 
                 alt="Famille CAMLAIT" 
                 className="w-full h-auto object-cover rounded-xl" 
                 style={{ maxHeight: '500px' }}

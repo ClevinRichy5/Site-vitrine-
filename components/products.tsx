@@ -59,17 +59,7 @@ export const products: Product[] = [
     image: "/images/Home_Nos marques_Lait_La BI_1000 x 1506.jpg",
     price: 150,
     rating: 4.6,
-    category: "Yaourts",
-  },
-  {
-    id: "5",
-    name: "Beurre Gusta",
-    description:
-      "Gusta est notre margarine premium, idéale pour toutes vos préparations culinaires grâce à sa texture facile à tartiner et son goût riche qui sublimera vos plats.",
-    image: "/images/Home_Nos marques_Margarine_Gusta_900 x 600_3.jpg",
-    price: 2500,
-    rating: 4.4,
-    category: "Beurres",
+    category: "Lait en poudre",
   },
   {
     id: "6",
@@ -77,7 +67,7 @@ export const products: Product[] = [
     description:
       "Notre Bergère Instant est un lait entier pasteurisé de la plus haute qualité, source de calcium et de vitamines essentielles pour une alimentation équilibrée.",
     image: "/images/Home_Nos marques_Yaourts_Jem 200g_Nature_1000 x 1506.jpg",
-    price: 400,
+    price: 450,
     rating: 4.9,
     category: "Laits",
   },
@@ -101,6 +91,15 @@ export const products: Product[] = [
     rating: 4.7,
     category: "Boissons",
   },
+  {
+    id: "9",
+    name: "Yaourt Camlait Sucré",
+    description: "Le Yaourt Camlait Sucré est un yaourt onctueux et rafraîchissant, parfait pour les petits et les grands en quête d’une pause gourmande et équilibrée au quotidien.",
+    image: "/images/camlait_sucree.jpg",
+    price: 300,
+    rating: 4.4,
+    category: "Produits laitiers"
+  }  
 ]
 
 export default function ProductList() {
@@ -123,17 +122,19 @@ export default function ProductList() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      <div className="min-h-screen bg-[url('/images/lait.jpg')] bg-cover bg-center relative">
+    
       <div className="container mx-auto px-4 py-16">
-        <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent">
-            Nos Produits
-          </h1>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Découvrez notre sélection de produits laitiers de haute qualité, élaborés avec soin pour satisfaire vos
-            papilles et contribuer à votre bien-être quotidien.
-          </p>
-        </div>
+      <div className="text-center mb-16 bg-white/40 backdrop-blur-md rounded-xl p-6 shadow-lg">
+  <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent">
+    Nos Produits
+  </h1>
+  <p className="text-gray-800 max-w-2xl mx-auto">
+    Découvrez notre sélection de produits laitiers de haute qualité, élaborés avec soin pour satisfaire vos
+    papilles et contribuer à votre bien-être quotidien.
+  </p>
+</div>
+
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {products.map((product) => (
@@ -177,7 +178,7 @@ export default function ProductList() {
                 <div className="absolute -top-12 right-4 h-16 w-16 rounded-full flex items-center justify-center shadow-lg border-2 border-emerald-100 group-hover:border-emerald-300 transition-all duration-500 hover:rotate-12 hover:scale-110 bg-gradient-to-br from-white via-emerald-50 to-white hover:from-emerald-100 hover:to-emerald-200">
                 <div className="flex flex-col items-center text-emerald-600">
                 <Coins className="w-5 h-5 mb-1" />
-              <span className="text-sm font-bold">{product.price.toFixed(2)}</span>
+              <span className="text-sm font-bold">{product.price.toFixed()}</span>
                   </div>
                 </div>
                 {/* Nom et évaluation */}
@@ -209,7 +210,7 @@ export default function ProductList() {
                     whileTap={{ scale: 0.95 }}
                   >
                     <ShoppingCart className="w-5 h-5" />
-                    <span className="sr-only">Ajouter au panier</span>
+                    {/* <span className="sr-only">Ajouter au panier</span> */}
                   </motion.button>
                 </div>
               </div>

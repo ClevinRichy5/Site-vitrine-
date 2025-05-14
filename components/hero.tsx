@@ -37,7 +37,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-green-50 to-white opacity-90"></div>
         <Image
-          src="/lait.jpg?height=1080&width=1920"
+          src="/images/Logo.jpg?height=1080&width=1920"
           alt="Fond laitier"
           fill
           className="object-cover opacity-70"
@@ -53,21 +53,6 @@ export default function Hero() {
             transition={{ duration: 0.8 }}
             className="text-center lg:text-left"
           >
-           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 leading-tight">
-            CAMLAIT SA
-          <br />
-          <span className="text-2xl md:text-3xl lg:text-4xl font-light italic font-serif text-green-700">
-           LA FORCE DU LAIT
-        </span>
-          </h1>
-            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <a href="#products" className="bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 transition-all transform hover:scale-105 font-medium">
-                Explorer nos Produits
-              </a>
-              <Link href={'#about'} className="border-2 border-green-600 text-green-600 px-8 py-3 rounded-full hover:bg-green-50 transition-all transform hover:scale-105 font-medium">
-                En Savoir Plus
-              </Link>
-            </div>
           </motion.div>
 
           <motion.div

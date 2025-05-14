@@ -86,7 +86,7 @@ const productsData = [
     longDescription:
       "Nouriss est notre yaourt à la vanille premium, élaboré avec soin pour offrir une texture crémeuse et un goût authentique. Enrichi en probiotiques, ce yaourt contribue à une bonne santé digestive tout en vous offrant un moment de plaisir gourmand\n\nce Nouriss contribue à une bonne santé digestive tout en vous offrant un moment de plaisir gourmand.",
     price: "250 F CFA",
-    volume: "250ml",
+    volume: "200ml",
     nutritionalInfo: {
       calories: "58 kcal par 100g",
       fat: "3,2g par 100g",
@@ -100,7 +100,7 @@ const productsData = [
       "/images/Home_Nos marques_Yaourts_Nouriss 250ml_Vanille_1506 x 1000.jpg",
     ],
     variants: [
-      { id: "3-1", name: "Nouriss 250ml ", price: "250 F CFA", image: "/images/Home_Nos marques_Yaourts_Nouriss 250ml_Vanille_1506 x 1000.jpg" },
+      { id: "3-1", name: "Nouriss 200ml ", price: "250 F CFA", image: "/images/Home_Nos marques_Yaourts_Nouriss 250ml_Vanille_1506 x 1000.jpg" },
     ],
     rating: 4.9,
     reviews: 156,
@@ -169,7 +169,7 @@ const productsData = [
       "Notre Yaourt jem velouté est un classique intemporel, élaboré selon des méthodes traditionnelles pour préserver toute l'authenticité du lait.",
     longDescription:
       " Sans sucre ajouté, il vous offre une expérience gustative pure et peut être consommé nature ou agrémenté selon vos envies.\n\n roirs.\n\n être consommé nature ou agrémenté selon vos envies.",
-    price: "400 F CFA",
+    price: "450 F CFA",
     volume: "200g",
     nutritionalInfo: {
       calories: "80 kcal par 100g",
@@ -184,9 +184,7 @@ const productsData = [
       "/images/Home_Nos marques_Margarine_Gusta_4,5kg_1000 x 1506.jpg",
     ],
     variants: [
-      { id: "4-1", name: "jem velouté Nature", price: "400 F CFA", image: "/images/Home_Nos marques_Yaourts_Jem 200g_Nature_1000 x 1506.jpg" },
-      { id: "4-2", name: "jem velouté Fraise", price: "400 F CFA", image: "/images/Home_Nos marques_Yaourts_Jem 200g_Fraise_1000 x 1506.jpg" },
-      { id: "4-3", name: "jem velouté Tarte au citron", price: "400 F CFA", image: "/images/Home_Nos marques_Yaourts_Jem 150g_Tare au citron_1000 x 1506.jpg" },
+      { id: "4-1", name: "jem velouté Nature", price: "450 F CFA", image: "/images/Home_Nos marques_Yaourts_Jem 200g_Nature_1000 x 1506.jpg" },
     ],
     rating: 4.6,
     reviews: 87,
@@ -223,7 +221,7 @@ const productsData = [
   {
     id: "8",
     name: "Jovino",
-    description: "Boisson lactée nourrissante et onctueuse.",
+    description: "Boisson a extrait de fruit.",
     longDescription: "Jovino est une boisson lactée onctueuse et nourrissante, fabriquée par Camlait. Elle combine la richesse du lait à une texture douce et savoureuse, pour offrir un moment de plaisir et d’énergie à tout moment de la journée.",
     price: "100 F CFA",
     volume: "1L",
@@ -242,7 +240,31 @@ const productsData = [
     ],
     rating: 4.6,
     reviews: 137
+  },
+  {
+    id: "9",
+    name: "Yaourt Camlait Sucré",
+    description: "Yaourt sucré onctueux au bon goût de lait.",
+    longDescription: "Le Yaourt Camlait Sucré est un délicieux yaourt nature légèrement sucré, élaboré à base de lait de qualité. Avec sa texture onctueuse et son goût doux, il est parfait pour une pause gourmande et rafraîchissante à tout moment de la journée. Idéal pour petits et grands !",
+    price: "300 F CFA",
+    volume: "150g",
+    nutritionalInfo: {
+    calories: "85 kcal par 100g",
+    fat: "3g par 100g",
+    protein: "3g par 100g",
+    calcium: "120mg par 100g"
+    },
+    image: "/images/camlait_sucree.jpg",
+    "gallery": [
+      "/images/yaourtSucre.jpg"
+    ],
+    variants: [
+      { "id": "9-1", "name": "Yaourt Camlait Sucré 150g", "price": "300 F CFA", "image": "/images/camlait_sucree.jpg" }
+    ],
+    rating: 4.4,
+    reviews: 89
   }
+  
 
 ]
 
