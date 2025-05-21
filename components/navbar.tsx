@@ -66,7 +66,7 @@ export default function Navbar() {
             <nav className="flex flex-col space-y-4">
               {[
                 { name: "Accueil", href: "/" },
-                { name: "À Propos", href: "about" },
+                { name: "À Propos", href: "/#about" },
                 { name: "Produits", href: "/#products" },
                 { name: "Localisation", href: "/#location" },
                 { name: "Contact", href: "/#contact" },
