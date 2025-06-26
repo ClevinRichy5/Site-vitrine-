@@ -56,7 +56,7 @@ const productsData = [
       "Toute la bonté avec moins de matières grasses. Idéal pour ceux qui surveillent leur apport calorique tout en profitant des bienfaits nutritionnels du lait.",
     longDescription:
       "Notre lait Riverr offre un équilibre parfait entre goût crémeux et légèreté. Avec seulement 1,5% de matières grasses, il constitue une option plus légère que le lait entier, tout en conservant sa richesse en calcium, protéines et vitamines essentielles.\n\nProduit dans le respect de nos valeurs d'agriculture durable, ce lait provient de vaches nourries principalement à l'herbe et élevées dans des conditions optimales de bien-être animal. Chaque étape de production est soigneusement contrôlée pour vous garantir un produit de la plus haute qualité.\n\nPolyvalent, il s'intègre parfaitement dans votre quotidien : dans votre café, vos smoothies, vos préparations culinaires ou simplement dans un verre pour une pause rafraîchissante et nutritive.",
-    price: "300 F CFA",
+    price: "700 F CFA",
     volume: "1L",
     nutritionalInfo: {
       calories: "46 kcal par 100ml",
@@ -71,9 +71,9 @@ const productsData = [
       "/images/Home_Nos marques_Boissons_Riverr 500ml_Fruits tropicaux_1000 x 1506.jpg",
     ],
     variants: [
-      { id: "2-1", name: "Riverr Orange", price: "300 F CFA", image: "/images/rorange.jpg" },
-      { id: "2-2", name: "Riverr Soya", price: "300 F CFA", image: "/images/soya.jpg" },
-      { id: "2-3", name: "River Fruit Tropicaux", price: "300 F CFA", image: "/images/Home_Nos marques_Boissons_Riverr 500ml_Fruits tropicaux_1000 x 1506.jpg" },
+      { id: "2-1", name: "Riverr Orange", price: "700 F CFA", image: "/images/rorange.jpg" },
+      { id: "2-2", name: "Riverr Soya", price: "700 F CFA", image: "/images/soya.jpg" },
+      { id: "2-3", name: "River Fruit Tropicaux", price: "700 F CFA", image: "/images/Home_Nos marques_Boissons_Riverr 500ml_Fruits tropicaux_1000 x 1506.jpg" },
     ],
     rating: 4.7,
     reviews: 98,
@@ -180,8 +180,6 @@ const productsData = [
     image: "/images/Home_Nos marques_Yaourts_Jem 200g_Nature_1000 x 1506.jpg",
     gallery: [
       "/images/Home_Nos marques_Yaourts_Jem 200g_Fraise_1000 x 1506.jpg",
-      "/images/Home_Nos marques_Yaourts_Jem 150g_Tare au citron_1000 x 1506.jpg",
-      "/images/Home_Nos marques_Margarine_Gusta_4,5kg_1000 x 1506.jpg",
     ],
     variants: [
       { id: "4-1", name: "jem velouté Nature", price: "450 F CFA", image: "/images/Home_Nos marques_Yaourts_Jem 200g_Nature_1000 x 1506.jpg" },
@@ -241,30 +239,32 @@ const productsData = [
     rating: 4.6,
     reviews: 137
   },
-  {
-    id: "9",
-    name: "Yaourt Camlait Sucré",
-    description: "Yaourt sucré onctueux au bon goût de lait.",
-    longDescription: "Le Yaourt Camlait Sucré est un délicieux yaourt nature légèrement sucré, élaboré à base de lait de qualité. Avec sa texture onctueuse et son goût doux, il est parfait pour une pause gourmande et rafraîchissante à tout moment de la journée. Idéal pour petits et grands !",
-    price: "300 F CFA",
-    volume: "150g",
-    nutritionalInfo: {
-    calories: "85 kcal par 100g",
-    fat: "3g par 100g",
-    protein: "3g par 100g",
-    calcium: "120mg par 100g"
-    },
-    image: "/images/camlait_sucree.jpg",
-    "gallery": [
-      "/images/yaourtSucre.jpg"
-    ],
-    variants: [
-      { "id": "9-1", "name": "Yaourt Camlait Sucré 150g", "price": "300 F CFA", "image": "/images/camlait_sucree.jpg" }
-    ],
-    rating: 4.4,
-    reviews: 89
-  }
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ]
 

@@ -37,7 +37,7 @@ export const products: Product[] = [
     description:
       "Riverr est notre boisson rafraîchissante aux fruits tropicaux, parfaite pour étancher votre soif pendant les journées chaudes avec sa saveur exotique et revigorante.",
     image: "/images/pomme (2).jpg",
-    price: 300,
+    price: 700,
     rating: 4.5,
     category: "Boissons",
   },
@@ -91,15 +91,6 @@ export const products: Product[] = [
     rating: 4.7,
     category: "Boissons",
   },
-  {
-    id: "9",
-    name: "Yaourt Camlait Sucré",
-    description: "Le Yaourt Camlait Sucré est un yaourt onctueux et rafraîchissant, parfait pour les petits et les grands en quête d’une pause gourmande et équilibrée au quotidien.",
-    image: "/images/camlait_sucree.jpg",
-    price: 300,
-    rating: 4.4,
-    category: "Produits laitiers"
-  }  
 ]
 
 export default function ProductList() {

@@ -49,7 +49,7 @@ export default function ContactForm(){
                   </div>
                   <div>
                     <h4 className="text-lg font-medium text-gray-900 dark:text-white">Email</h4>
-                    <p className="text-gray-600 dark:text-gray-300">ovzuko@camlait.com</p>
+                    <p className="text-gray-600 dark:text-gray-300">infoscamlait@camlait.cm</p>
                   </div>
                 </div>
                 
@@ -59,7 +59,7 @@ export default function ContactForm(){
                   </div>
                   <div>
                     <h4 className="text-lg font-medium text-gray-900 dark:text-white">Phone</h4>
-                    <p className="text-gray-600 dark:text-gray-300">+237 233 37 28 05</p>
+                    <p className="text-gray-600 dark:text-gray-300">+237 691 49 28 05</p>
                   </div>
                 </div>
                 

@@ -105,7 +105,7 @@ const About = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-green-900/60 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-6 text-white">
                 <span className="text-sm font-semibold bg-green-600 px-3 py-1 rounded-full">ZONE CAMLAIT</span>
-                <h4 className="text-xl font-bold mt-2">CAMLAIT YAOUNDE</h4>
+                <h4 className="text-xl font-bold mt-2">CAMLAIT BAFOUSSAM</h4>
                 {/* <p className="text-white/80">CAMLAIT YAOUNDE</p> */}
               </div>
             </div>

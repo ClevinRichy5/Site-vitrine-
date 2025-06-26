@@ -18,7 +18,7 @@ const ContactInfo = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {/* WhatsApp */}
           <a 
-            href="https://wa.me/+237690600986" 
+            href="https://wa.me/+237698814996" 
             target="_blank" 
             rel="noopener noreferrer"
             className="flex flex-col items-center p-6 bg-[#f1f9ed] rounded-xl shadow-sm hover:shadow-md transition-all hover:-translate-y-1 group"
@@ -33,40 +33,40 @@ const ContactInfo = () => {
           
           {/* Email */}
           <a 
-            href="mailto:contact@camlait.cm" 
+            href="mailto:contact2@camlait.cm" 
             className="flex flex-col items-center p-6 bg-[#f1f9ed] rounded-xl shadow-sm hover:shadow-md transition-all hover:-translate-y-1 group"
           >
             <div className="w-16 h-16 flex items-center justify-center bg-green-100 rounded-full mb-4 group-hover:bg-green-200 transition-colors">
               <Mail size={32} className="text-green-600" />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">Email</h3>
-            <p className="text-center text-gray-600">ovzuko@camlait.com</p>
+            <p className="text-center text-gray-600">infoscamlait@camlait.cm</p>
             <span className="mt-4 text-green-600 font-medium">Cliquez pour envoyer un email</span>
           </a>
           
           {/* Direction */}
           <a 
-            href="tel:+237222222222" 
+            href="tel:+237698814996" 
             className="flex flex-col items-center p-6 bg-[#f1f9ed] rounded-xl shadow-sm hover:shadow-md transition-all hover:-translate-y-1 group"
           >
             <div className="w-16 h-16 flex items-center justify-center bg-green-100 rounded-full mb-4 group-hover:bg-green-200 transition-colors">
               <BriefcaseIcon size={32} className="text-green-600" />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">Direction</h3>
-            <p className="text-center text-gray-600">+237 233 37 44 60</p>
+            <p className="text-center text-gray-600">+237 698 81 49 96</p>
             <span className="mt-4 text-green-600 font-medium">Appeler la direction</span>
           </a>
           
           {/* Boutique */}
           <a 
-            href="tel:+237333333333" 
+            href="tel:+237696936863" 
             className="flex flex-col items-center p-6 bg-[#f1f9ed] rounded-xl shadow-sm hover:shadow-md transition-all hover:-translate-y-1 group"
           >
             <div className="w-16 h-16 flex items-center justify-center bg-green-100 rounded-full mb-4 group-hover:bg-green-200 transition-colors">
               <Phone size={32} className="text-green-600" />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">Boutique</h3>
-            <p className="text-center text-gray-600">+237 233 37 28 05</p>
+            <p className="text-center text-gray-600">+237 696 93 68 63</p>
             <span className="mt-4 text-green-600 font-medium">Appeler la boutique</span>
           </a>
         </div>
