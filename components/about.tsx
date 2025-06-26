@@ -30,8 +30,8 @@ const About = () => {
   }, []);
   
   return (
-    <section id="about" className="py-24 bg-[#f6fbf3]">
-      <div className="min-h-screen bg-[url('/images/lait.jpg')] bg-cover bg-center relative">
+    <section id="about" className="py-24  bg-[#f6fbf3]">
+      <div className="min-h-screen px-2 bg-[url('/images/lait.jpg')] bg-cover bg-center relative">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
             À Propos de Nous
@@ -47,7 +47,7 @@ const About = () => {
             <h3 className={`text-2xl font-bold mb-6 text-green-700 transition-all duration-700 ${animateElements ? 'opacity-100' : 'opacity-0'}`}>
               Notre Histoire
             </h3>
-            <p className={`mb-6 text-gray-700 transition-all duration-700 delay-100 ${animateElements ? 'opacity-100' : 'opacity-0'}`}>
+            <p className={`mb-6  text-justify text-gray-700 transition-all duration-700 delay-100 ${animateElements ? 'opacity-100' : 'opacity-0'}`}>
             CAMLAIT SA., est une Entreprise camerounaise, agroalimentaire spécialisée dans la
            transformation et la distribution des produits faits à base de lait et de soja principalement,
             sains et variés, destinés au bien être des consommateurs de tout âges du nourri sson à la
@@ -115,11 +115,11 @@ const About = () => {
             <h3 className={`text-2xl font-bold mb-6 text-green-700 transition-all duration-700 ${animateElements ? 'opacity-100' : 'opacity-0'}`} style={{ transitionDelay: '300ms' }}>
               Notre Direction
             </h3>
-            <p className={`mb-6 text-gray-700 transition-all duration-700 ${animateElements ? 'opacity-100' : 'opacity-0'}`} style={{ transitionDelay: '400ms' }}>
+            <p className={`mb-6 text-justify text-gray-700 transition-all duration-700 ${animateElements ? 'opacity-100' : 'opacity-0'}`} style={{ transitionDelay: '400ms' }}>
             Sous une direction dynamique, CAMLAIT a connu une transformation significative au cours de la dernière décennie. Fort de plus de 25 ans d'expérience dans l'industrie alimentaire, notre leader apporte une expertise inestimable 
             et une passion pour l'innovation à notre entreprise.
             </p>
-            <p className={`mb-6 text-gray-700 transition-all duration-700 ${animateElements ? 'opacity-100' : 'opacity-0'}`} style={{ transitionDelay: '500ms' }}>
+            <p className={`mb-6 text-justify text-gray-700 transition-all duration-700 ${animateElements ? 'opacity-100' : 'opacity-0'}`} style={{ transitionDelay: '500ms' }}>
             Notre PDG a mis en œuvre une stratégie audacieuse pour moderniser nos installations, élargir notre gamme de produits et renforcer notre engagement envers
              la durabilité et la responsabilité sociale.
             </p>
@@ -140,7 +140,7 @@ const About = () => {
             <h3 className={`text-2xl font-bold mb-6 text-green-700 transition-all duration-700 ${animateElements ? 'opacity-100' : 'opacity-0'}`} style={{ transitionDelay: '700ms' }}>
               Notre Vision
             </h3>
-            <p className={`mb-6 text-gray-700 transition-all duration-700 ${animateElements ? 'opacity-100' : 'opacity-0'}`} style={{ transitionDelay: '800ms' }}>
+            <p className={`mb-6 text-justify text-gray-700 transition-all duration-700 ${animateElements ? 'opacity-100' : 'opacity-0'}`} style={{ transitionDelay: '800ms' }}>
             Fabrication des Yaourts à base du soja (40%) : NOURISS ;.
              Fabrication des boissons nutritives et des goûters à base de fruits de saison, et de soja (17%)
             :Fruidou, RIVERR SOY, BREAKSOY ;
@@ -148,7 +148,7 @@ const About = () => {
             JEM, PRESTIGE, CREME GLACEE ;
             Conditionnement poudre de lait instantané en sachet (15%)   
             </p>
-            <p className={`mb-6 text-gray-700 transition-all duration-700 ${animateElements ? 'opacity-100' : 'opacity-0'}`} style={{ transitionDelay: '900ms' }}>
+            <p className={`mb-6 text-justify text-gray-700 transition-all duration-700 ${animateElements ? 'opacity-100' : 'opacity-0'}`} style={{ transitionDelay: '900ms' }}>
             CAMLAIT SA. Se fait accompagner par des partenaires stratégiques de référence de classe
             internationale et locale qui respectent le même sens des valeurs que ceux imposés par le
             marché et qui permettent d’assurer un service de qualité auprès de la clientèle. Notamment :
