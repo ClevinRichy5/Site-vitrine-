@@ -41,11 +41,11 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Phone size={18} className="mr-2 text-green-500" />
-                <span className="text-gray-400">+237 233 37 44 60</span>
+                <span className="text-gray-400">+237 698 81 49 96</span>
               </li>
               <li className="flex items-center">
                 <Mail size={18} className="mr-2 text-green-500" />
-                <span className="text-gray-400">ovzuko@camlait.com</span>
+                <span className="text-gray-400">infoscamlait@camlait.cm</span>
               </li>
             </ul>
           </div>
