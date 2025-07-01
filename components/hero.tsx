@@ -37,7 +37,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-green-50 to-white opacity-90"></div>
         <Image
-          src="/images/logo.jpg"
+          src="/images/Logo.jpg"
           alt="Fond laitier"
           fill
           className="object-cover opacity-200"
