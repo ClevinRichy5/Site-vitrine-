@@ -37,10 +37,10 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-green-50 to-white opacity-90"></div>
         <Image
-          src="/images/Logo.jpg?height=1080&width=1920"
+          src="/images/logo.jpg"
           alt="Fond laitier"
           fill
-          className="object-cover opacity-70"
+          className="object-cover opacity-200"
           priority
         />
       </div>
@@ -61,27 +61,6 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.3 }}
             className="relative h-[500px] w-full"
           >
-            {/* <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[120px] h-[400px] overflow-hidden">
-              <div className="absolute top-0 left-0 w-full h-[80px] bg-white/80 backdrop-blur-md rounded-t-lg z-20 border border-white/50"></div>
-              <div className="absolute top-[80px] left-0 w-full h-[320px] bg-white/20 backdrop-blur-sm rounded-b-lg overflow-hidden border border-white/30">
-                <div
-                  ref={milkRef}
-                  className="absolute bottom-0 left-0 w-full bg-white opacity-90"
-                  style={{ height: "0%", transition: "height 2.5s ease-in-out" }}
-                ></div>
-              </div>
-            </div> */}
-
-            {/* <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[300px] h-[300px]">
-              <Image
-                src="/lait2.jpg?height=600&width=600"
-                alt="Bouteille de lait"
-                width={300}
-                height={300}
-                className="object-contain"
-              />
-            </div> */}
-
             <motion.div
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}

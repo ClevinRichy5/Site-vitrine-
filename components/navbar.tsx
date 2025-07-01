@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import Image from "next/image"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
 import { cn } from "@/lib/utils"
@@ -27,7 +28,14 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center">
-            <span className="text-2xl font-bold text-green-600">CAMLAIT  SA</span>
+          <Image
+          src="/images/logo1.jpg" 
+            alt="Logo Camlait"
+           width={120}
+           height={40} 
+           className="object-contain"
+          priority
+            />
           </Link>
 
           {/* Desktop Navigation */}
