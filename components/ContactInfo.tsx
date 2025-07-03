@@ -18,7 +18,7 @@ const ContactInfo = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {/* WhatsApp */}
           <a 
-            href="https://wa.me/+237698814996" 
+            href="https://wa.me/+237691499969" 
             target="_blank" 
             rel="noopener noreferrer"
             className="flex flex-col items-center p-6 bg-[#f1f9ed] rounded-xl shadow-sm hover:shadow-md transition-all hover:-translate-y-1 group"
@@ -27,7 +27,7 @@ const ContactInfo = () => {
               <MessageSquareText size={32} className="text-green-600" />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">WhatsApp</h3>
-            <p className="text-center text-gray-600">+237 690 60 09 86</p>
+            <p className="text-center text-gray-600">+237 691 49 99 69</p>
             <span className="mt-4 text-green-600 font-medium">Cliquez pour discuter</span>
           </a>
           
