@@ -24,9 +24,9 @@ const productsData = [
     id: "1",
     name: "BreakSoy",
     description:
-      "Notre BreakSoy, riche en saveur et en nutriments. Parfait pour toute la famille. Provenant de vaches élevées en pâturage libre, ce lait est non seulement délicieux mais aussi éthique et durable.",
+      "Notre BreakSoy, riche en saveur et en nutriments. Parfait pour toute la famille. Provenant de vaches élevées en pâturage libre, ce lait de soja est non seulement délicieux mais aussi éthique et durable.",
     longDescription:
-      "BreakSoy est le fruit d'un savoir-faire transmis de génération en génération. Nos vaches paissent librement dans les prairies verdoyantes, se nourrissant d'herbe fraîche et de foin naturel. Ce mode d'élevage traditionnel et respectueux garantit un lait d'une qualité exceptionnelle, riche en vitamines A et D, en calcium et en protéines essentielles.\n\nChaque gorgée vous offre une expérience crémeuse et satisfaisante, idéale pour accompagner vos céréales du matin, enrichir vos recettes ou simplement être dégustée pure pour apprécier sa saveur authentique. Notre processus de pasteurisation préserve les qualités nutritionnelles tout en garantissant une sécurité alimentaire optimale.",
+      "BreakSoy est le fruit d'un savoir-faire transmis de génération en génération.\n\nChaque gorgée vous offre une expérience crémeuse et satisfaisante, idéale pour accompagner vos céréales du matin, enrichir vos recettes ou simplement être dégustée pure pour apprécier sa saveur authentique. Notre processus de pasteurisation préserve les qualités nutritionnelles tout en garantissant une sécurité alimentaire optimale.",
     price: "250 F CFA",
     volume: "500ml",
     nutritionalInfo: {
@@ -43,7 +43,7 @@ const productsData = [
     ],
     variants: [
       { id: "1-1", name: "BreakSoy Vanille", price: "300 F CFA", image: "/images/vanille.jpg" },
-      { id: "1-2", name: "BreakSoy Cafe", price: "300 F CFA", image: "/images/chocolatt.jpg" },
+      { id: "1-2", name: "BreakSoy Chocolaté", price: "300 F CFA", image: "/images/chocolatt.jpg" },
       { id: "1-3", name: "BreakSoy Camarel", price: "300 F CFA", image: "/images/caramel.jpg" },
     ],
     rating: 4.8,
@@ -73,7 +73,7 @@ const productsData = [
     variants: [
       { id: "2-1", name: "Riverr Orange", price: "700 F CFA", image: "/images/rorange.jpg" },
       { id: "2-2", name: "Riverr Soya", price: "700 F CFA", image: "/images/soya.jpg" },
-      { id: "2-3", name: "River Fruit Tropicaux", price: "700 F CFA", image: "/images/Home_Nos marques_Boissons_Riverr 500ml_Fruits tropicaux_1000 x 1506.jpg" },
+      { id: "2-3", name: "River Fruits Tropicaux", price: "700 F CFA", image: "/images/Home_Nos marques_Boissons_Riverr 500ml_Fruits tropicaux_1000 x 1506.jpg" },
     ],
     rating: 4.7,
     reviews: 98,
@@ -82,7 +82,7 @@ const productsData = [
     id: "3",
     name: "Nouriss",
     description:
-      "Riche en probiotiques, calcium et protéines fabriqué à partir de notre lait bio premium. Une option saine pour une collation.",
+      "Riche en probiotiques, calcium et protéines fabriqué à partir de notre jus de soja. Une option saine pour une collation.",
     longDescription:
       "Nouriss est notre yaourt à la vanille premium, élaboré avec soin pour offrir une texture crémeuse et un goût authentique. Enrichi en probiotiques, ce yaourt contribue à une bonne santé digestive tout en vous offrant un moment de plaisir gourmand\n\nce Nouriss contribue à une bonne santé digestive tout en vous offrant un moment de plaisir gourmand.",
     price: "250 F CFA",
@@ -109,7 +109,7 @@ const productsData = [
     id: "4",
     name: "La Bergère Instant",
     description:
-      "Notre Yaourt jem velouté est un classique intemporel, élaboré selon des méthodes traditionnelles pour préserver toute l'authenticité du lait.",
+      "Notre lait jem velouté est un classique intemporel, élaboré selon des méthodes traditionnelles pour préserver toute l'authenticité du lait.",
     longDescription:
       " Sans sucre ajouté, il vous offre une expérience gustative pure et peut être consommé nature ou agrémenté selon vos envies.\n\n roirs.\n\n être consommé nature ou agrémenté selon vos envies.",
     price: "150 F CFA",
@@ -128,8 +128,6 @@ const productsData = [
     ],
     variants: [
       { id: "4-1", name: "La Bergère Instant", price: "150 F CFA", image: "/images/Home_Nos marques_Lait_La BI_1000 x 1506.jpg" },
-      { id: "4-2", name: "jem velouté", price: "400 F CFA", image: "/images/Home_Nos marques_Yaourts_Jem 200g_Fraise_1000 x 1506.jpg" },
-      { id: "4-3", name: "jem velouté", price: "400 F CFA", image: "/images/Home_Nos marques_Yaourts_Jem 150g_Tare au citron_1000 x 1506.jpg" },
     ],
     rating: 4.6,
     reviews: 87,
@@ -191,7 +189,7 @@ const productsData = [
     id: "7",
     name: "Fruidou",
     description:
-      "Boisson lactée fruitée rafraîchissante.",
+      "Boisson faite a base de concentrée de fruit naturelle.",
     longDescription:
       "Fruidou est une boisson lactée légère et fruitée, fabriquée par Camlait. Elle associe la douceur du lait à la fraîcheur des fruits pour offrir une boisson savoureuse et désaltérante. Idéale pour les pauses gourmandes, les petits-déjeuners ou les goûters des petits comme des grands.",
     price: "1000 F CFA",
