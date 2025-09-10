@@ -55,7 +55,7 @@ export const products: Product[] = [
     id: "4",
     name: "La Bergère Instant",
     description:
-      "Notre Yaourt Jem Velouté est un classique intemporel, apprécié pour sa texture soyeuse et son goût équilibré qui en fait un en-cas sain et délicieux à tout moment de la journée.",
+      "Notre lait Bergère Instant est un classique intemporel, apprécié pour sa texture soyeuse et son goût équilibré qui en fait un en-cas sain et délicieux à tout moment de la journée.",
     image: "/images/Home_Nos marques_Lait_La BI_1000 x 1506.jpg",
     price: 150,
     rating: 4.6,
@@ -65,7 +65,7 @@ export const products: Product[] = [
     id: "6",
     name: "jem velouté",
     description:
-      "Notre Bergère Instant est un lait entier pasteurisé de la plus haute qualité, source de calcium et de vitamines essentielles pour une alimentation équilibrée.",
+      "Notre yaourt jem velouté est un lait entier pasteurisé de la plus haute qualité, source de calcium et de vitamines essentielles pour une alimentation équilibrée.",
     image: "/images/Home_Nos marques_Yaourts_Jem 200g_Nature_1000 x 1506.jpg",
     price: 450,
     rating: 4.9,

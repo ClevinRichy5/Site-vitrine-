@@ -109,7 +109,7 @@ const productsData = [
     id: "4",
     name: "La Bergère Instant",
     description:
-      "Notre lait jem velouté est un classique intemporel, élaboré selon des méthodes traditionnelles pour préserver toute l'authenticité du lait.",
+      "Notre lait Bergère Instant est un classique intemporel, élaboré selon des méthodes traditionnelles pour préserver toute l'authenticité du lait.",
     longDescription:
       " Sans sucre ajouté, il vous offre une expérience gustative pure et peut être consommé nature ou agrémenté selon vos envies.\n\n roirs.\n\n être consommé nature ou agrémenté selon vos envies.",
     price: "150 F CFA",
